@@ -1,0 +1,23 @@
+class CfgFunctions {
+	class DK {
+		class random {
+			file = "functions\random";
+			class randomBetween {};
+			class randomUnitInGroup {};
+			class randomPositionInTriggerArea {};
+		};
+		
+		class spawn {
+			file = "functions\spawn";
+			class addStrengthToGroup {};
+			class spawnStaticUnit {};
+			class checkStaticUnits {};
+		};
+		
+		class civilian {
+			file = "functions\civilian";
+			class civilianPopulationZone {};
+			class getCivilianClasses {};
+		};
+	};
+};
