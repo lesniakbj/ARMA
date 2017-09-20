@@ -32,8 +32,9 @@ private _trgArea = triggerArea _triggerZone;
 private _trgA = (_trgArea select 0);
 private _trgB = (_trgArea select 1);
 private _buildingList = if(_trgA > _trgB) then { nearestObjects [_triggerZone, ["Static"], _trgA]; } else { nearestObjects [_triggerZone, ["Static"], _trgB]; };
+private _destroyedBuildings = [];
 if(_partiallDestroyed) then {
-	[_buildingList, _triggerZone] call DK_fnc_damageBuildings;
+	_destroyedBuildings = [_buildingList, _triggerZone] call DK_fnc_damageBuildings;
 };
 
 // With the remaining buildings, move some spawns there.
