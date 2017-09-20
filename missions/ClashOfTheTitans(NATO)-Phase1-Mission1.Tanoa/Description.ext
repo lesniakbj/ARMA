@@ -19,6 +19,7 @@ class CfgFunctions {
 			file = "functions\civilian";
 			class civilianPopulationZone {};
 			class getCivilianClasses {};
+			class damageBuildings {};
 		};
 		
 		class triggers {
