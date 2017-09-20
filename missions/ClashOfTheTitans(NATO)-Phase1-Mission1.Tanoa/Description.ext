@@ -37,10 +37,7 @@ class CfgFunctions {
 			class saveStat {};
 			class savePlayerStatsLoop {};
 			
-			class clearStats {};
 			class saveKill {};
-			class savePlayerKill {};
-			class savePlayerDeath {};
 		};
 	};
 };

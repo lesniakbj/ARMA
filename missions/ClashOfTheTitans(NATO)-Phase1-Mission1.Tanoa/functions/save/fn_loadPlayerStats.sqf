@@ -1,4 +1,5 @@
 ["positionPlayer"] call DK_fnc_loadStat;
+["DK_cmp_Kills"] call DK_fnc_loadStat;
 
 //END
 // statsLoaded = 1;
