@@ -1,29 +1,42 @@
-params["_unit", "_idleAnimation", "_behaviour", "_stance", "_kill", "_breakFree"];
-if(isServer) then {
-	_unit disableAI "PATH";
+params["_unit", ["_staticAnimation", "STAND"], ["_behaviour", "SAFE"], ["_stance", "UP"], ["_startDead", false], ["_canBreakFree", true]];
+private["_staticAnim"];
+if(!isServer) exitWith {};
+
+_unit setBehaviour _behaviour;
+_unit setUnitPos _stance;
 	
-	if(_idleAnimation != "") then {
-		[[_unit, _idleAnimation, "ASIS"], BIS_fnc_ambientAnim] remoteExec ["call"];
-	};
-	
-	if(_behaviour != "") then {
-		_unit setBehaviour _behaviour;
-	};
-	
-	if(_stance != "") then {
-		_unit setUnitPos _stance;
-	};
-	
-	if(_kill) then {
-		_rand = random 15;
-		_unit setDir (random 360);
-		_unit setVelocity [_rand, _rand, _rand];
-		_unit setDamage 1;
-	};
-	
-	if(_breakFree) then {
-		_unit setVariable ["CanBreakFree", true];
+if(_staticAnimation != "") then {
+	if(side _unit == civilian) then {
+		_staticAnim = [[_unit, _staticAnimation, "ASIS"], BIS_fnc_ambientAnim];
+		if(_canBreakFree) then {
+			_unit addEventHandler ["FiredNear", {
+				params["_unit", "_vehicle", "_distance"];
+				_unit setVariable ["DK_BreakStatic", true];
+			}];
+			[_unit] spawn DK_fnc_breakStaticCheck;
+		};
 	} else {
-		_unit setVariable ["CanBreakFree", false];
+		_staticAnim = [[_unit, _staticAnimation, "ASIS"], BIS_fnc_ambientAnimCombat];
 	};
+	_staticAnim remoteExec ["call"];
 };
+	
+if(_startDead) then {
+	_zVel = random 15;
+	_xNeg = (random 1 >= .50);
+	_xVel = _zVel;
+	if(_xNeg) then {
+		_xVel = -_zVel;
+	};
+
+	_yNeg = (random 1 >= .50);
+	_yVel = _zVel;
+	if(_yNeg) then {
+		_yVel = -_zVel;
+	};
+
+	_unit setDamage 1;
+	_unit setVelocity [_xVel, _yVel, _zVel];
+};
+
+_unit;

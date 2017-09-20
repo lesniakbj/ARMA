@@ -11,13 +11,19 @@ class CfgFunctions {
 			file = "functions\spawn";
 			class addStrengthToGroup {};
 			class spawnStaticUnit {};
-			class checkStaticUnits {};
+			class breakStaticCheck {};
+			class makeActiveUnit {};
 		};
 		
 		class civilian {
 			file = "functions\civilian";
 			class civilianPopulationZone {};
 			class getCivilianClasses {};
+		};
+		
+		class triggers {
+			file = "functions\triggers";
+			class checkSaveCivilians {};
 		};
 	};
 };
