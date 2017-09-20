@@ -6,40 +6,40 @@
 //		4) If the waypoint is gone, it should generate another
 //		5) There should be a cap to the number of Civilians	
 params["_triggerZone", "_civRange", "_behavior", "_partiallDestroyed"];
-if(isServer) then {
-	_numCivs = _civRange call DK_fnc_randomBetween;
-	_buildingList = nearestObjects [_triggerZone, ["Static"], 100];
-	_civClasses = [worldName] call DK_fnc_getCivilianClasses;
-	
-	// Create the Standard Civilians in the Area
-	_civGroup = objNull;
-	for "_x" from 0 to _numCivs do {
-		if(_x == 0) then {
-			_civGroup = createGroup civilian;
-		};
-		
-		_pos = [_triggerZone] call DK_fnc_randomPositionInTriggerArea;
-		_civClass = selectRandom _civClasses;
-		_civ = _civGroup createUnit [_civClass, _pos, [], 0, "NONE"];
-		_civ setSpeedMode "LIMITED";
-		_civ setCombatMode "GREEN";
-		_civ setBehaviour _behavior;
-		_civ enableDynamicSimulation true;
+if(!isServer) exitWith {};
+
+_numCivs = _civRange call DK_fnc_randomBetween;
+_buildingList = nearestObjects [_triggerZone, ["Static"], 100];
+_civClasses = [worldName] call DK_fnc_getCivilianClasses;
+
+// Create the Standard Civilians in the Area
+_civGroup = objNull;
+for "_x" from 0 to _numCivs do {
+	if(_x == 0) then {
+		_civGroup = createGroup civilian;
 	};
 	
-	// If the area is "War-Torn", destroy some buildings. 
-	if(_partiallDestroyed) then {
-		for "_n" from 0 to ((count _buildingList) - 1) do {
-			_building = _buildingList select _n;
-			_rand = (random 1);
-			if(_rand <= .20 && !isNil "_building") then {
-				_building setDamage 1;
-				"test_EmptyObjectForFireBig" createVehicle (getPos _building);
-			};
-		};
-	};
-	
-	// With the remaining buildings, move some spawns there.
-	
-	_civGroup;
+	_pos = [_triggerZone] call DK_fnc_randomPositionInTriggerArea;
+	_civClass = selectRandom _civClasses;
+	_civ = _civGroup createUnit [_civClass, _pos, [], 0, "NONE"];
+	_civ setSpeedMode "LIMITED";
+	_civ setCombatMode "GREEN";
+	_civ setBehaviour _behavior;
+	_civ enableDynamicSimulation true;
 };
+
+// If the area is "War-Torn", destroy some buildings. 
+if(_partiallDestroyed) then {
+	for "_n" from 0 to ((count _buildingList) - 1) do {
+		_building = _buildingList select _n;
+		_rand = (random 1);
+		if(_rand <= .20 && !isNil "_building") then {
+			_building setDamage 1;
+			"test_EmptyObjectForFireBig" createVehicle (getPos _building);
+		};
+	};
+};
+
+// With the remaining buildings, move some spawns there.
+
+_civGroup;

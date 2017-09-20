@@ -1,5 +1,5 @@
 params["_unit", ["_behaviour", "COMBAT"], ["_animHandle", objNull], ["_transAnim", "AmovPercMstpSrasWrflDnon"]];
-if(!isServer) then {};
+if(!isServer) exitWith {};
 
 _unitPos = unitPos _unit;
 

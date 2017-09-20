@@ -1,4 +1,6 @@
 params["_world"];
+if(!isServer) exitWith {};
+
 _civs = objNull;
 switch(_world) do {
 	case "Tanoa": {
