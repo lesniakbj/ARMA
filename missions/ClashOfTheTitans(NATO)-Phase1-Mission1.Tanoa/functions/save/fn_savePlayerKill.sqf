@@ -4,8 +4,8 @@ private _totalKills = objNull;
 private _killedClasses = objNull;
 private _typeToAdd = "";
 private _playerID = owner _player;
+private _kills = [["DK_cmp_Kills"], DK_fnc_getClientVar] remoteExec ["call", _playerID];
 
-_kills = profileNamespace getVariable ["DK_cmp_Kills", objNull];
 if(!isNull _kills) then {
 	_totalKills = _kills select 0;
 	_killedClasses = _kills select 1;
