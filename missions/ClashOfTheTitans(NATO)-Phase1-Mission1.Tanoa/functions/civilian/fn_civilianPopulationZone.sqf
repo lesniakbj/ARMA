@@ -8,11 +8,10 @@
 params["_triggerZone", "_civRange", "_behavior", "_partiallDestroyed"];
 if(!isServer) exitWith {};
 
+// Create the Standard Civilians in the Area
 private _numCivs = _civRange call DK_fnc_randomBetween;
 private _civClasses = [worldName] call DK_fnc_getCivilianClasses;
 private _civGroup = objNull;
-
-// Create the Standard Civilians in the Area
 for "_x" from 0 to _numCivs do {
 	if(isNull _civGroup) then {
 		_civGroup = createGroup civilian;
@@ -32,9 +31,9 @@ private _trgArea = triggerArea _triggerZone;
 private _trgA = (_trgArea select 0);
 private _trgB = (_trgArea select 1);
 private _buildingList = if(_trgA > _trgB) then { nearestObjects [_triggerZone, ["Static"], _trgA]; } else { nearestObjects [_triggerZone, ["Static"], _trgB]; };
-private _destroyedBuildings = [];
+private _remainingBuildings = [];
 if(_partiallDestroyed) then {
-	_destroyedBuildings = [_buildingList, _triggerZone] call DK_fnc_damageBuildings;
+	_remainingBuildings = [_buildingList, _triggerZone] call DK_fnc_damageBuildings;
 };
 
 // With the remaining buildings, move some spawns there.
