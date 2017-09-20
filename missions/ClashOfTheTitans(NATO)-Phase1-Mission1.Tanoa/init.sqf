@@ -11,15 +11,18 @@ if(isServer) then {
 
 	// Setup serverID
 	[] call DK_fnc_setupServerID;
-
-	// Setup Stats Listeners
-	// addMissionEventHandler ["PlayerConnected", DK_fnc_clearStats];
-	// addMissionEventHandler ["EntityKilled", DK_fnc_saveKill];
 };
 
 // Load Client Save Functionality
 waitUntil {!isNil "serverID"};
 if(!isDedicated) then {
+	// Load our player stats
 	[] call DK_fnc_loadPlayerStats;
+
+	// Setup Listeners to Save/Load Stats
+	// addMissionEventHandler ["PlayerConnected", DK_fnc_clearStats];
+	// addMissionEventHandler ["EntityKilled", DK_fnc_saveKill];
+
+	// Continously Saved Stats Here
 	[] spawn DK_fnc_savePlayerStatsLoop;
 };
