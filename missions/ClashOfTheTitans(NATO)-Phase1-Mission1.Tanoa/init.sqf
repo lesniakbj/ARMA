@@ -1,9 +1,6 @@
 // Wait for Mission Init
 waitUntil {time > 0};
 
-// Run the intro video
-[] execVM "functions\init\intro.sqf";
-
 if(isServer) then {
 	// Setup Faction Relationships
 	civilian setFriend [EAST, 1];
@@ -12,6 +9,9 @@ if(isServer) then {
 	// Setup serverID
 	[] call DK_fnc_setupServerID;
 };
+
+// Run the intro video
+[] execVM "functions\init\intro.sqf";
 
 // Load Client Save Functionality
 waitUntil {!isNil "serverID"};
