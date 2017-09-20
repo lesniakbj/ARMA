@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=872;
+		nextID=878;
 	};
 	class Camera
 	{
-		pos[]={13607.168,69.094574,2974.0723};
-		dir[]={-0.83327538,-0.45936257,-0.30772862};
-		up[]={-0.43094271,0.88822997,-0.15914513};
-		aside[]={-0.34644186,-2.0312509e-006,0.93810421};
+		pos[]={13386.167,25.977528,2698.2778};
+		dir[]={-0.55118161,-0.36559376,-0.75011206};
+		up[]={-0.2165172,0.93075019,-0.2946603};
+		aside[]={-0.8058998,-7.5786375e-007,0.59217685};
 	};
 };
 binarizationWanted=0;
@@ -2293,7 +2293,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=158;
+		items=159;
 		class Item0
 		{
 			dataType="Group";
@@ -3716,13 +3716,14 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=7;
+				items=8;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13300.444,8.0231791,2588.9924};
+						position[]={13093.029,20.229755,2398.5295};
+						angles[]={0,1.6442572,0};
 					};
 					side="East";
 					flags=7;
@@ -3738,7 +3739,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13294.632,8.5288754,2582.3335};
+						position[]={13086.815,22.317066,2404.8152};
+						angles[]={0,1.6442572,0};
 					};
 					side="East";
 					flags=5;
@@ -3748,13 +3750,15 @@ class Mission
 					};
 					id=59;
 					type="rhs_vdv_recon_arifleman";
+					atlOffset=-1.9073486e-006;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13300.774,8.3153772,2582.9812};
+						position[]={13087.01,20.669979,2398.6416};
+						angles[]={0,1.6442572,0};
 					};
 					side="East";
 					flags=5;
@@ -3764,51 +3768,66 @@ class Mission
 					};
 					id=60;
 					type="rhs_vdv_recon_machinegunner_assistant";
+					atlOffset=3.8146973e-006;
 				};
 				class Item3
 				{
 					dataType="Waypoint";
-					position[]={13363.41,4.9588227,2671.1719};
+					position[]={13262.492,6.4701319,2505.0071};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=65;
+					id=872;
 					type="Move";
 				};
 				class Item4
 				{
 					dataType="Waypoint";
-					position[]={13426.593,5.7197752,2750.6707};
+					position[]={13351.873,5.7033467,2661.8821};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=66;
+					id=873;
 					type="Move";
+					atlOffset=0.00010919571;
 				};
 				class Item5
 				{
 					dataType="Waypoint";
-					position[]={13492.453,3.970474,2823.7068};
+					position[]={13368,0.90206116,2620.8918};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=67;
+					id=874;
 					type="Move";
+					atlOffset=0.00019830465;
 				};
 				class Item6
 				{
 					dataType="Waypoint";
-					position[]={13514.283,4.4052734,2971.7959};
-					completitionRadius=20;
-					type="SeekAndDestroy";
+					position[]={13084.63,0.89365673,2167.7932};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=68;
+					id=875;
+					type="Move";
+					atlOffset=3.3736229e-005;
+				};
+				class Item7
+				{
+					dataType="Waypoint";
+					position[]={12999.8,1.0258125,2078.3728};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=876;
+					type="Move";
+					atlOffset=5.4478645e-005;
 				};
 			};
 			class Attributes
@@ -3816,6 +3835,7 @@ class Mission
 				name="OpforPatrol1";
 				init="call{_added = [this, [1, 2], [85, 100]] call DK_fnc_addStrengthToGroup;}";
 				behaviour="SAFE";
+				speedMode="LIMITED";
 				formation="COLUMN";
 			};
 			id=57;
@@ -4433,6 +4453,7 @@ class Mission
 				};
 			};
 			id=251;
+			atlOffset=-0.044466019;
 		};
 		class Item14
 		{
@@ -4449,6 +4470,7 @@ class Mission
 			};
 			id=252;
 			type="C_Offroad_02_unarmed_F";
+			atlOffset=-0.044466019;
 		};
 		class Item15
 		{
@@ -8642,6 +8664,7 @@ class Mission
 			{
 				position[]={13513.929,0.00024743378,2781.0701};
 			};
+			name="SaveCivTaskModule";
 			id=570;
 			type="ModuleTaskCreate_F";
 			atlOffset=0.236;
@@ -8864,9 +8887,10 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={13360.055,4.9677935,2675.4224};
-				angles[]={0.013336525,0,6.2245855};
+				position[]={13360.055,4.9677963,2675.4221};
+				angles[]={0.013334315,0,6.224577};
 			};
+			name="CivTaskDest";
 			id=571;
 			type="ModuleTaskSetDestination_F";
 			class CustomAttributes
@@ -8933,11 +8957,12 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={13360.021,5.028995,2672.3459};
-			angle=2.2323978;
+			angle=2.2323983;
 			class Attributes
 			{
 				condition="call{this;}";
 				onActivation="call{[SeizedCiv1] call DK_fnc_checkSaveCivilians;}";
+				onDeactivation="call{{ _x setVariable [""DK_BreakStatic"", true]; } forEach SeizedCiv1;}";
 				sizeA=12;
 				sizeB=6;
 				sizeC=5;
@@ -9730,16 +9755,69 @@ class Mission
 			id=871;
 			type="C_Offroad_02_unarmed_F";
 		};
+		class Item158
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={13405.054,0.00039058924,2643.2771};
+			};
+			id=877;
+			type="ModuleTaskSetState_F";
+			atlOffset=0.39499995;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetState_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="SUCCEEDED";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=12;
+			nextID=14;
 		};
 		class Links
 		{
-			items=12;
+			items=14;
 			class Item0
 			{
 				linkID=0;
@@ -9855,6 +9933,26 @@ class Mission
 				linkID=11;
 				item0=404;
 				item1=573;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item12
+			{
+				linkID=12;
+				item0=877;
+				item1=570;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item13
+			{
+				linkID=13;
+				item0=574;
+				item1=877;
 				class CustomData
 				{
 					type="Sync";

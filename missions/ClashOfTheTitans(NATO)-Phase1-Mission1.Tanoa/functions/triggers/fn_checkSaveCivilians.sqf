@@ -1,9 +1,9 @@
 params["_saveGroup"];
 if(!isServer) exitWith {};
 
-_cnt = ({alive _x} count units _saveGroup); 
+_cnt = ({alive _x} count (units _saveGroup)); 
 if(_cnt >= 2) then {
-    SaveCivTask setTaskState "Succeeded";
+   ["SaveCivTask", "SUCCEEDED"] call BIS_fnc_taskSetState; 
 } else {
-    SaveCivTask setTaskState "Failed";
+   ["SaveCivTask", "FAILED"] call BIS_fnc_taskSetState; 
 };
