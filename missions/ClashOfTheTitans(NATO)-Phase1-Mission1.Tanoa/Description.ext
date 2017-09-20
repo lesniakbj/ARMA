@@ -43,6 +43,7 @@ class CfgFunctions {
 
 			// Event Save Functions	
 			class saveKill {};
+			class updateKills {};
 		};
 	};
 };
