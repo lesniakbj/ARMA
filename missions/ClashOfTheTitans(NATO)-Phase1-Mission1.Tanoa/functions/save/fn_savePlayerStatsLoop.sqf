@@ -1,5 +1,6 @@
 while {true} do {
 	sleep 1;
 	
-	["positionPlayer", getPosATL player] call DK_fnc_saveStat;
+	// Put things we want to continously save here
+	// ["positionPlayer", getPosATL player] call DK_fnc_saveStat;
 };

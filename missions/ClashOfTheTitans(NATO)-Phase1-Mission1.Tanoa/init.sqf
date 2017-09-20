@@ -19,9 +19,9 @@ if(!isDedicated) then {
 	// Load our player stats
 	[] call DK_fnc_loadPlayerStats;
 
-	// Setup Listeners to Save/Load Stats
+	// Setup Listeners to Save/Load Stats (player = Client Local)
 	// addMissionEventHandler ["PlayerConnected", DK_fnc_clearStats];
-	// addMissionEventHandler ["EntityKilled", DK_fnc_saveKill];
+	addMissionEventHandler ["EntityKilled", DK_fnc_saveKill];
 
 	// Continously Saved Stats Here
 	[] spawn DK_fnc_savePlayerStatsLoop;
