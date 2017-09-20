@@ -1,6 +1,6 @@
 params["_unit", ["_staticAnimation", "STAND"], ["_behaviour", "SAFE"], ["_stance", "UP"], ["_startDead", false], ["_canBreakFree", true]];
-private _staticAnim = objNull;
 if(!isServer) exitWith {};
+private _staticAnim = objNull;
 
 _unit setBehaviour _behaviour;
 _unit setUnitPos _stance;

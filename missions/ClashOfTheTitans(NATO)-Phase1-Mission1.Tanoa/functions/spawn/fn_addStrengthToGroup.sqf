@@ -1,8 +1,7 @@
 params["_group", "_strengthRange", "_chanceRange"];
 if(!isServer) exitWith {};
-
-_chance = _chanceRange call DK_fnc_randomBetween;
-_strength = floor (_strengthRange call DK_fnc_randomBetween);
+private _chance = _chanceRange call DK_fnc_randomBetween;
+private _strength = floor (_strengthRange call DK_fnc_randomBetween);
 
 for "_x" from 0 to _strength do {
 	_shouldAdd = (random 100) <= _chance;

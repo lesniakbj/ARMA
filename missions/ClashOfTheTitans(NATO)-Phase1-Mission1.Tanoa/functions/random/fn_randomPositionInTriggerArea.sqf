@@ -1,11 +1,11 @@
 params["_triggerZone"];
 if(!isServer) exitWith {};
 
-_trgArea = triggerArea _triggerZone;
-_trgCenter = getPos _triggerZone;
-_aPos = objNull;
-_bPos = objNull;
-_zPos = 0;
+private _trgArea = triggerArea _triggerZone;
+private _trgCenter = getPos _triggerZone;
+private _aPos = objNull;
+private _bPos = objNull;
+private _zPos = 0;
 
 // Unpack Trigger Area
 _trgA = (_trgArea select 0);

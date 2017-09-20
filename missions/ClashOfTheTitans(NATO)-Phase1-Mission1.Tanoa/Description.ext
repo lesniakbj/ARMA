@@ -28,6 +28,7 @@ class CfgFunctions {
 
 		class save {
 			file = "functions\save";
+			class clearStats {};
 			class saveKill {};
 			class savePlayerKill {};
 			class savePlayerDeath {};

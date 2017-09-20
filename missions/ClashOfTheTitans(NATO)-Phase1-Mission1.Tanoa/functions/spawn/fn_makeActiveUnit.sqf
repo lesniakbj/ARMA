@@ -1,7 +1,6 @@
 params["_unit", ["_behaviour", "COMBAT"], ["_animHandle", objNull], ["_transAnim", "AmovPercMstpSrasWrflDnon"]];
 if(!isServer) exitWith {};
-
-_unitPos = unitPos _unit;
+private _unitPos = unitPos _unit;
 
 // Remove the AI handcuffs
 {_unit enableAI _x} forEach ["ANIM", "AUTOTARGET", "FSM", "MOVE", "TARGET", "PATH"];

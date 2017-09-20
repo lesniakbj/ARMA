@@ -8,14 +8,14 @@
 params["_triggerZone", "_civRange", "_behavior", "_partiallDestroyed"];
 if(!isServer) exitWith {};
 
-_numCivs = _civRange call DK_fnc_randomBetween;
-_buildingList = nearestObjects [_triggerZone, ["Static"], 100];
-_civClasses = [worldName] call DK_fnc_getCivilianClasses;
+private _numCivs = _civRange call DK_fnc_randomBetween;
+private _buildingList = nearestObjects [_triggerZone, ["Static"], 100];
+private _civClasses = [worldName] call DK_fnc_getCivilianClasses;
+private _civGroup = objNull;
 
 // Create the Standard Civilians in the Area
-_civGroup = objNull;
 for "_x" from 0 to _numCivs do {
-	if(_x == 0) then {
+	if(isNull _civGroup) then {
 		_civGroup = createGroup civilian;
 	};
 	

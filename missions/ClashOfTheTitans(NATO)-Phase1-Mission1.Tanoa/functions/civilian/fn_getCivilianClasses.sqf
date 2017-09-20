@@ -1,7 +1,7 @@
 params["_world"];
 if(!isServer) exitWith {};
 
-_civs = objNull;
+private _civs = objNull;
 switch(_world) do {
 	case "Tanoa": {
 		_civs = ["C_Man_casual_1_F_tanoan", "C_Man_casual_2_F_tanoan", "C_Man_casual_3_F_tanoan", 

@@ -1,6 +1,6 @@
 params["_unit"];
-private["_animHandle"];
 if(!isServer) exitWith {};
+private _animHandle = -1;
 
 waitUntil {
 	sleep 0.1;
