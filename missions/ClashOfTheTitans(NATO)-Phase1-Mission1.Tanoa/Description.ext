@@ -29,15 +29,19 @@ class CfgFunctions {
 
 		class save {
 			file = "functions\save";
+			// Init Functions
 			class setupServerID {};
 
+			// Loading Functions
 			class loadStat {};
 			class applyLoadedStat {};
 			class loadPlayerStats {};
 
+			// Saving Functions
 			class saveStat {};
 			class savePlayerStatsLoop {};
-			
+
+			// Event Save Functions	
 			class saveKill {};
 		};
 	};
