@@ -1,10 +1,7 @@
 params["_numCivs", "_civClasses", "_behavior", "_triggerZone"];
-private _civGroup = [];
+private _civArr = [];
 for "_x" from 0 to _numCivs do {
-	if(isNull _civGroup) then {
-		_civGroup = createGroup civilian;
-	};
-	
+	_civGroup = createGroup civilian;
 	_pos = [_triggerZone] call DK_fnc_randomPositionInTriggerArea;
 	_civClass = selectRandom _civClasses;
 	_civ = _civGroup createUnit [_civClass, _pos, [], 0, "NONE"];
@@ -12,7 +9,8 @@ for "_x" from 0 to _numCivs do {
 	_civ setCombatMode "GREEN";
 	_civ setBehaviour _behavior;
 	_civ enableDynamicSimulation true;
+	_civArr pushBack _civ;
 };
 
-// Return the Group
-_civGroup;
+// Return the Civ Array
+_civArr;

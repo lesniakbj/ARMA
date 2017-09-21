@@ -22,7 +22,7 @@ if(!isServer) exitWith {};
 // Create the Standard Civilians in the Area
 private _numCivs = _civRange call DK_fnc_randomBetween;
 private _civClasses = [worldName] call DK_fnc_getCivilianClasses;
-private _civGroup = [_numCivs, _civClasses, _behavior, _triggerZone] call DK_fnc_generateCivilianGroupInArea;
+private _civArr = [_numCivs, _civClasses, _behavior, _triggerZone] call DK_fnc_generateCivilianGroupInArea;
 
 // If the area is "War-Torn", destroy some buildings.
 private _buildings = [_triggerZone] call DK_fnc_searchAreaForBuildings;
@@ -31,7 +31,7 @@ if(_partiallDestroyed) then {
 };
 
 // With the remaining buildings, move some spawns there.
-_civGroup = [_civGroup, _buildings] call DK_fnc_generateBuildingSpawns;
+_civArr = [_civArr, _buildings] call DK_fnc_generateBuildingSpawns;
 
 // Create Set Pieces, we want support for Civ/OPFOR Statics
 if(_createCivStatic || _createOpForStatic) then {
@@ -39,7 +39,7 @@ if(_createCivStatic || _createOpForStatic) then {
 };
 
 // Create Random "Scripted" Waypoints
-[_civGroup, _triggerZone] call DK_fnc_generateRandomWaypoints;
+[_civArr, _triggerZone] call DK_fnc_generateRandomWaypoints;
 
-// Return the CivGroup
-_civGroup;
+// Return the CivArr
+_civArr;
