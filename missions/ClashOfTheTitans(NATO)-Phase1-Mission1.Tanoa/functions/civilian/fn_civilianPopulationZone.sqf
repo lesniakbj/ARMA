@@ -7,11 +7,11 @@
 
 	Parameter(s):
 		0: TRIGGER - Trigger Zone in which to Spawn Civilians
-		1: ARRAY - [MinCivNum, MaxCivNum]
-		2: STRING - Behaviour of the Spawned Civilians
-		3: BOOLEAN - Should the City Zone start Partially Destroyed?
-		4: BOOLEAN - Should the Generator create Civilian Static Pieces?
-		5: BOOLEAN - Should the Generator create OpFor Static Pieces?
+		1: ARRAY - [MinCivNum, MaxCivNum], Range of Number of Civilians to Spawn - [8, 15]
+		2: STRING - Behaviour of the Spawned Civilians - "SAFE"
+		3: BOOLEAN - Should the City Zone start Partially Destroyed? - false
+		4: BOOLEAN - Should the Generator create Civilian Static Pieces? - false
+		5: BOOLEAN - Should the Generator create OpFor Static Pieces? - false
 
 	Returns:
 		GROUP - The Civilian Group that was Created
