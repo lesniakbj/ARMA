@@ -7,19 +7,18 @@ _trgArea params ["_trgCenter", "_trgA", "_trgB", "_angle", "_trgIsRectangle"];
 // Generate Coordinates
 private _offset = [];
 if(_trgIsRectangle) then {
-	private _2a = _trgA * 2;
-    private _2b = _trgB * 2;
-	_offset = [random(_2a) - _trgA, random(_2b) - _trgB, 0];
+	private _2A = _trgA * 2;
+    private _2B = _trgB * 2;
+	_offset = [random(_2A) - _trgA, random(_2B) - _trgB, 0];
 } else {
-	// Generate random point
-	private _rho = random 1;
-	private _phi = random 360;
+	// Generate random point on Unit Circle
+	private _radius = random 1;
+	private _theta = random 360;
+    private _xPos = sqrt(_radius) * cos(_theta);
+    private _yPos = sqrt(_radius) * sin(_theta);
 
-    // Scale
-    private _x = sqrt(_rho) * cos(_phi);
-    private _y = sqrt(_rho) * sin(_phi);
-
-    _offset = [_x * _trgA, _y * _trgB, 0];
+ 	// Scale
+    _offset = [_xPos * _trgA, _yPos * _trgB, 0];
 };
 
 // Translate the Offset to the WorldModel Pos and Rotation of Trigger at Ground Level
