@@ -5,37 +5,30 @@
 //		3) Generate a Single Waypoint for All Civilians
 //		4) If the waypoint is gone, it should generate another
 //		5) There should be a cap to the number of Civilians	
-params["_triggerZone", "_civRange", "_behavior", "_partiallDestroyed"];
+params[
+	"_triggerZone", 
+	["_civRange", [8, 15]], 
+	["_behavior", "SAFE"], 
+	["_partiallDestroyed", false], 
+	["_createSetPieces", false]
+];
 if(!isServer) exitWith {};
 
 // Create the Standard Civilians in the Area
 private _numCivs = _civRange call DK_fnc_randomBetween;
 private _civClasses = [worldName] call DK_fnc_getCivilianClasses;
-private _civGroup = objNull;
-for "_x" from 0 to _numCivs do {
-	if(isNull _civGroup) then {
-		_civGroup = createGroup civilian;
-	};
-	
-	_pos = [_triggerZone] call DK_fnc_randomPositionInTriggerArea;
-	_civClass = selectRandom _civClasses;
-	_civ = _civGroup createUnit [_civClass, _pos, [], 0, "NONE"];
-	_civ setSpeedMode "LIMITED";
-	_civ setCombatMode "GREEN";
-	_civ setBehaviour _behavior;
-	_civ enableDynamicSimulation true;
-};
+private _civGroup = [_numCivs, _civClasses, _behavior, _triggerZone] call DK_fnc_generateCivilianGroupInArea;
 
 // If the area is "War-Torn", destroy some buildings.
-private _trgArea = triggerArea _triggerZone;
-private _trgA = (_trgArea select 0);
-private _trgB = (_trgArea select 1);
-private _buildingList = if(_trgA > _trgB) then { nearestObjects [_triggerZone, ["Static"], _trgA]; } else { nearestObjects [_triggerZone, ["Static"], _trgB]; };
-private _remainingBuildings = [];
+private _buildings = if(_trgA > _trgB) then { nearestObjects [_triggerZone, ["Static"], _trgA]; } else { nearestObjects [_triggerZone, ["Static"], _trgB]; };
 if(_partiallDestroyed) then {
-	_remainingBuildings = [_buildingList, _triggerZone] call DK_fnc_damageBuildings;
+	_buildings = [_buildings, _triggerZone] call DK_fnc_damageBuildingsInArea;
 };
 
 // With the remaining buildings, move some spawns there.
+_civGroup = [_civGroup] call DK_fnc_generateBuildingSpawns;
 
+// Create Random "Scripted" Waypoints
+
+// Return the CivGroup
 _civGroup;

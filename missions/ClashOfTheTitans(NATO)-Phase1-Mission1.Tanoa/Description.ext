@@ -23,8 +23,15 @@ class CfgFunctions {
 		
 		class civilian {
 			file = "functions\civilian";
+
+			// Civilian Pop Zone Functions
 			class civilianPopulationZone {};
 			class getCivilianClasses {};
+			class generateCivilianGroupInArea {};
+			class generateBuildingSpawns {};
+
+			// Civili Pop Zone Building Functions
+			class damageBuildingsInArea {};
 			class damageBuildings {};
 		};
 		
