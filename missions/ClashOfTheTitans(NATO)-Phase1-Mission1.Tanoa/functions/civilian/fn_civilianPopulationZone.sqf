@@ -1,10 +1,21 @@
-// For the civilian population zone we will
-// follow the following rules:
-//		1) Spawn Civilians in the Trigger Zone
-//		2) Spawn some of the Civilians in Buildings
-//		3) Generate a Single Waypoint for All Civilians
-//		4) If the waypoint is gone, it should generate another
-//		5) There should be a cap to the number of Civilians	
+/*
+	Author: 
+		Doctork Kamikaze
+
+	Description:
+		Ambient Civilian Life Zone
+
+	Parameter(s):
+		0: TRIGGER - Trigger Zone in which to Spawn Civilians
+		1: ARRAY - [MinCivNum, MaxCivNum]
+		2: STRING - Behaviour of the Spawned Civilians
+		3: BOOLEAN - Should the City Zone start Partially Destroyed?
+		4: BOOLEAN - Should the Generator create Civilian Static Pieces?
+		5: BOOLEAN - Should the Generator create OpFor Static Pieces?
+
+	Returns:
+		GROUP - The Civilian Group that was Created
+ */
 params["_triggerZone", ["_civRange", [8, 15]], ["_behavior", "SAFE"], ["_partiallDestroyed", false], ["_createCivStatic", false], ["_createOpForStatic", false]];
 if(!isServer) exitWith {};
 
