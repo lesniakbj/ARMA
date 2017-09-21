@@ -5,7 +5,7 @@
 //		3) Generate a Single Waypoint for All Civilians
 //		4) If the waypoint is gone, it should generate another
 //		5) There should be a cap to the number of Civilians	
-params["_triggerZone", ["_civRange", [8, 15]], ["_behavior", "SAFE"], ["_partiallDestroyed", false], ["_createStaticPieces", false]];
+params["_triggerZone", ["_civRange", [8, 15]], ["_behavior", "SAFE"], ["_partiallDestroyed", false], ["_createCivStatic", false], ["_createOpForStatic", false]];
 if(!isServer) exitWith {};
 
 // Create the Standard Civilians in the Area
@@ -22,8 +22,8 @@ if(_partiallDestroyed) then {
 // With the remaining buildings, move some spawns there.
 _civGroup = [_civGroup, _buildings] call DK_fnc_generateBuildingSpawns;
 
-// Create Set Pieces
-if(_createStaticPieces) then {
+// Create Set Pieces, we want support for Civ/OPFOR Statics
+if(_createCivStatic || _createOpForStatic) then {
 
 };
 
