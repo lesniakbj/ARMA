@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1151;
+		nextID=1152;
 	};
 	class Camera
 	{
-		pos[]={12391.303,106.16397,2363.2095};
-		dir[]={-0.42030427,-0.81322807,-0.40249795};
-		up[]={-0.58734548,0.58194518,-0.5624634};
-		aside[]={-0.69164276,4.1723251e-007,0.72223985};
+		pos[]={13149.344,63.985989,2225.7021};
+		dir[]={-0.74359548,-0.24950331,-0.62033367};
+		up[]={-0.19158877,0.96837395,-0.15983003};
+		aside[]={-0.64059311,-7.4505806e-008,0.7678805};
 	};
 };
 binarizationWanted=0;
@@ -178,8 +178,8 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="ReviveRequiredItems";
-			expression="false";
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
 			class Value
 			{
 				class data
@@ -266,8 +266,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="SharedObjectives";
-			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			property="ReviveRequiredItems";
+			expression="false";
 			class Value
 			{
 				class data
@@ -8098,27 +8098,6 @@ class Mission
 		};
 		class Item160
 		{
-			dataType="Trigger";
-			position[]={12984.289,3.626112,2116.2009};
-			angle=2.2874634;
-			class Attributes
-			{
-				name="trg_CompleteObjective1";
-				condition="call{this;}";
-				onActivation="call{waitUntil { ({alive _x} count units ObjectiveGroup1) == 0; };" \n "[""TaskDestroyAA1"", ""SUCCEEDED""] call BIS_fnc_taskSetState;}";
-				sizeA=90;
-				sizeB=45;
-				sizeC=10;
-				activationBy="WEST";
-				type="EAST G";
-				isRectangle=1;
-				isServerOnly=1;
-			};
-			id=913;
-			type="EmptyDetectorArea10x10";
-		};
-		class Item161
-		{
 			dataType="Group";
 			side="East";
 			class Entities
@@ -8238,7 +8217,7 @@ class Mission
 			id=918;
 			atlOffset=2.3841858e-007;
 		};
-		class Item162
+		class Item161
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8356,7 +8335,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item163
+		class Item162
 		{
 			dataType="Group";
 			side="East";
@@ -8821,7 +8800,7 @@ class Mission
 			id=1117;
 			atlOffset=-1.335144e-005;
 		};
-		class Item164
+		class Item163
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8939,7 +8918,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item165
+		class Item164
 		{
 			dataType="Group";
 			side="East";
@@ -9402,7 +9381,7 @@ class Mission
 			id=1127;
 			atlOffset=-6.3896179e-005;
 		};
-		class Item166
+		class Item165
 		{
 			dataType="Object";
 			class PositionInfo
@@ -9520,7 +9499,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item167
+		class Item166
 		{
 			dataType="Object";
 			class PositionInfo
@@ -9637,6 +9616,26 @@ class Mission
 				};
 				nAttributes=5;
 			};
+		};
+		class Item167
+		{
+			dataType="Trigger";
+			position[]={12988.134,4.5669098,2126.8831};
+			angle=2.2323978;
+			class Attributes
+			{
+				condition="call{this;}";
+				onActivation="call{[] spawn DK_fnc_checkAAObjective;}";
+				sizeA=90;
+				sizeB=45;
+				sizeC=5;
+				activationBy="WEST";
+				isRectangle=1;
+				isServerOnly=1;
+			};
+			id=1151;
+			type="EmptyDetectorArea10x10";
+			atlOffset=0.79200006;
 		};
 	};
 	class Connections
@@ -9781,7 +9780,7 @@ class Mission
 			class Item13
 			{
 				linkID=13;
-				item0=913;
+				item0=1151;
 				item1=1149;
 				class CustomData
 				{
@@ -9791,7 +9790,7 @@ class Mission
 			class Item14
 			{
 				linkID=14;
-				item0=913;
+				item0=1151;
 				item1=1150;
 				class CustomData
 				{
