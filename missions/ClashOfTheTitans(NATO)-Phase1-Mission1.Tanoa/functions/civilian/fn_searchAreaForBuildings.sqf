@@ -1,4 +1,5 @@
 params["_triggerZone"];
+if(!isServer) exitWith {};
 private _trgArea = triggerArea _triggerZone;
 private _trgA = (_trgArea select 0);
 private _trgB = (_trgArea select 1);

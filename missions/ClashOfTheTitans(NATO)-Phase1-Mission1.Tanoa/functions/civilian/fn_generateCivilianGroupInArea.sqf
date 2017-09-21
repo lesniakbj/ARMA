@@ -1,4 +1,5 @@
 params["_numCivs", "_civClasses", "_behavior", "_triggerZone"];
+if(!isServer) exitWith {};
 private _civArr = [];
 for "_x" from 0 to _numCivs do {
 	_civGroup = createGroup civilian;

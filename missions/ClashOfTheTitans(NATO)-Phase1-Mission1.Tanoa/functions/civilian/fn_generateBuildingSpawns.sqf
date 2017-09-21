@@ -1,4 +1,5 @@
 params["_civArr", "_buildings"];
+if(!isServer) exitWith {};
 private _numToMove = floor ([1, ((count _civArr) / 2)] call DK_fnc_randomBetween);
 for "_n" from 0 to _numToMove do {
 	_unit = selectRandom _civArr;

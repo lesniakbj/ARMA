@@ -30,6 +30,7 @@ class CfgFunctions {
 			class generateCivilianGroupInArea {};
 			class generateBuildingSpawns {};
 			class generateRandomWaypoints {};
+			class generateUnitWaypoint {};
 
 			// Civili Pop Zone Building Functions
 			class searchAreaForBuildings {};
