@@ -8,6 +8,12 @@ if(isPlayer _killed) then {
 	["DK_cmp_Deaths", _deathsObj] call DK_fn_saveStat;
 };
 
+if(side _killed == civilian) then {
+	["DK_cmp_Civilians"] call DK_fnc_loadStat;
+	_deathsObj = [DK_cmp_Civilians, _killed, _killer] call DK_fnc_updateKills;
+	["DK_cmp_Civilians", _deathsObj] call DK_fn_saveStat;
+};
+
 if(isPlayer _killer) then {
 	["DK_cmp_Kills"] call DK_fnc_loadStat;
 	_killsObj = [DK_cmp_Kills, _killed, _killer] call DK_fnc_updateKills;
