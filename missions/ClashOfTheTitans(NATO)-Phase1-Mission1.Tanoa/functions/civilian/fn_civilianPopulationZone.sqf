@@ -20,13 +20,13 @@ private _civClasses = [worldName] call DK_fnc_getCivilianClasses;
 private _civGroup = [_numCivs, _civClasses, _behavior, _triggerZone] call DK_fnc_generateCivilianGroupInArea;
 
 // If the area is "War-Torn", destroy some buildings.
-private _buildings = if(_trgA > _trgB) then { nearestObjects [_triggerZone, ["Static"], _trgA]; } else { nearestObjects [_triggerZone, ["Static"], _trgB]; };
+private _buildings = [_triggerZone] call DK_fnc_searchAreaForBuildings;
 if(_partiallDestroyed) then {
-	_buildings = [_buildings, _triggerZone] call DK_fnc_damageBuildingsInArea;
+	_buildings = [_buildings, _triggerZone] call DK_fnc_damageBuildings;
 };
 
 // With the remaining buildings, move some spawns there.
-_civGroup = [_civGroup] call DK_fnc_generateBuildingSpawns;
+_civGroup = [_civGroup, _buildings] call DK_fnc_generateBuildingSpawns;
 
 // Create Random "Scripted" Waypoints
 

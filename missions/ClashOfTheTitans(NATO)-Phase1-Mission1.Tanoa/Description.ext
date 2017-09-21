@@ -31,7 +31,7 @@ class CfgFunctions {
 			class generateBuildingSpawns {};
 
 			// Civili Pop Zone Building Functions
-			class damageBuildingsInArea {};
+			class searchAreaForBuildings {};
 			class damageBuildings {};
 		};
 		
