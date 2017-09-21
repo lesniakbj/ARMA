@@ -9,8 +9,11 @@ class CfgFunctions {
 		
 		class spawn {
 			file = "functions\spawn";
+
+			// Group Random
 			class addStrengthToGroup {};
-			
+			class spawnRandomGroup {};
+
 			// Static Units
 			class spawnStaticUnit {};
 			class breakStaticCheck {};
