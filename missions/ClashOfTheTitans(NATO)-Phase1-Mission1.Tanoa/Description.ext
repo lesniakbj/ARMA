@@ -29,6 +29,7 @@ class CfgFunctions {
 			class getCivilianClasses {};
 			class generateCivilianGroupInArea {};
 			class generateBuildingSpawns {};
+			class generateRandomWaypoints {};
 
 			// Civili Pop Zone Building Functions
 			class searchAreaForBuildings {};
