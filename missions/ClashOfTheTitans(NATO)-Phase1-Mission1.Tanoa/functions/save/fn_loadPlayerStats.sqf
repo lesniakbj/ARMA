@@ -5,5 +5,4 @@
 ["DK_cmp_Score"] call DK_fnc_loadStat;
 
 //END
-// statsLoaded = 1;
-// player globalChat format ["Your stats are loaded %1.", name player];
+player globalChat format ["Player %1 has successfully loaded.", name player];

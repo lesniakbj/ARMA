@@ -1,6 +1,6 @@
 params["_killCountArray", "_killed", "_killer"];
 private _killsObj = _killCountArray;
-private _killType = roleDescription _killed;
+private _killType = if(!(roleDescription _killed isEqualTo "")) then { roleDescription _killed; } else { getText (configFile/"cfgVehicles"/(typeOf _killed)/"displayName"); };
 private _killsByTypeObjs = _killsObj select 1;
 _matched = _killsObj select {(_killsByTypeObjs select 0) isEqualTo _killType} select 0;
 
