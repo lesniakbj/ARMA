@@ -1,6 +1,7 @@
 // Wait for Mission Init
 waitUntil {time > 0};
 
+// Setup the Server.
 if(isServer) then {
 	// Setup Faction Relationships
 	civilian setFriend [EAST, 1];
@@ -9,12 +10,14 @@ if(isServer) then {
 	// Setup serverID
 	[] call DK_fnc_setupServerID;
 };
+waitUntil {!isNil "serverID"};
 
-// Run the intro video
-[] execVM "functions\init\intro.sqf";
+// Run the intro Video
+_handle = [] execVM "functions\init\intro.sqf";
+waitUntil {scriptDone _handle};
+
 
 // Load Client Save Functionality
-waitUntil {!isNil "serverID"};
 if(!isDedicated) then {
 	// Load our player stats
 	[] call DK_fnc_loadPlayerStats;

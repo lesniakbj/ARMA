@@ -7,3 +7,5 @@ if(_cnt >= 2) then {
 } else {
    ["SaveCivTask", "FAILED"] call BIS_fnc_taskSetState; 
 };
+
+["TaskDestroyAA1", "ASSIGNED"] call BIS_fnc_taskSetState; 

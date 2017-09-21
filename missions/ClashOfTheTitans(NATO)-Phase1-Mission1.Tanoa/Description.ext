@@ -10,8 +10,11 @@ class CfgFunctions {
 		class spawn {
 			file = "functions\spawn";
 			class addStrengthToGroup {};
+			
+			// Static Units
 			class spawnStaticUnit {};
 			class breakStaticCheck {};
+			class breakStaticEventHandler {};
 			class makeActiveUnit {};
 		};
 		

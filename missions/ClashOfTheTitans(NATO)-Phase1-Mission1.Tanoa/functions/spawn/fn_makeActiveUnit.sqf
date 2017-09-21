@@ -6,13 +6,13 @@ private _unitPos = unitPos _unit;
 {_unit enableAI _x} forEach ["ANIM", "AUTOTARGET", "FSM", "MOVE", "TARGET", "PATH"];
 _unit setBehaviour _behaviour;
 _unit setUnitPos "UP";
+_thing = attachedTo _unit;
 detach _unit;
+deleteVehicle _thing;
+
 
 // Unlock the unit from it's ambient animation
 _unit removeEventHandler ["AnimDone", _animHandle];
-if(side _unit == civilian) then {
-	_transAnim = "AmovPercMstpSnonWnonDnon";
-};
 _unit playMoveNow _transAnim;
 
 sleep ((random 3) + 3);
@@ -20,5 +20,16 @@ sleep ((random 3) + 3);
 _unit setUnitPos _unitPos;
 
 if(side _unit == civilian) then {
-	(group _unit) allowFleeing 1;
+	_grp = (group _unit);
+	_grp allowFleeing 1;
+	_wp = _grp addWaypoint [(getPos _unit), ([50, 100] call DK_fnc_randomBetween), 0];
+	_wp setWaypointType "MOVE";
+	_wp setWaypointSpeed "FULL";
+	_grp setBehaviour "CARELESS";
+} else {
+	_grp = (group _unit);
+	_wp = _grp addWaypoint [(getPos _unit),0, 0];
+	_wp setWaypointType "SAD";
+	_wp setWaypointSpeed "FULL";
+	_grp setBehaviour "CARELESS";
 };
