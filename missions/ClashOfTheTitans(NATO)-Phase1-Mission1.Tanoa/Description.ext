@@ -1,5 +1,9 @@
 class CfgFunctions {
 	class DK {
+		class util {
+			class setUnitWaypoint {};
+		};
+
 		class random {
 			file = "functions\random";
 			class randomBetween {};
