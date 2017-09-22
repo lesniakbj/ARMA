@@ -18,12 +18,10 @@ sleep ((random 1) + 2);
 // Return to the default or previously set unit pos
 _unit setUnitPos _unitPos;
 
-_grp = (group _unit);
-if(side _unit == civilian) then {
-	_grp allowFleeing 1;
-	_grp setBehaviour "AWARE";
+if(side _unit != civilian) then {
+	_nearest = _unit findNearestEnemy _unit;
+	_unit move (getPos _nearest);
+	_unit setBehaviour "COMBAT";
 } else {
-	_pos = _grp findNearestEnemy (getPos _unit);
-	_grp move _pos;
-	_grp setBehaviour "COMBAT";
+	_unit move (markerPos "EnterMarker");
 };

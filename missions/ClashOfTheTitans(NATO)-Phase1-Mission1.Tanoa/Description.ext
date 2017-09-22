@@ -1,8 +1,6 @@
 class CfgFunctions {
 	class DK {
-		class util {
-			class setUnitWaypoint {};
-		};
+		class util {};
 
 		class random {
 			file = "functions\random";
@@ -28,7 +26,7 @@ class CfgFunctions {
 		class civilian {
 			file = "functions\civilian";
 
-			// Civilian Pop Zone Functions
+			// Civilian Pop Zones
 			class civilianPopulationZone {};
 			class getCivilianClasses {};
 			class generateCivilianGroupInArea {};
@@ -36,15 +34,9 @@ class CfgFunctions {
 			class generateRandomWaypoints {};
 			class generateUnitWaypoint {};
 
-			// Civili Pop Zone Building Functions
+			// Civilian Pop Zone Buildings
 			class searchAreaForBuildings {};
 			class damageBuildings {};
-		};
-		
-		class triggers {
-			file = "functions\triggers";
-			class checkSaveCivilians {};
-			class checkAAObjective {};
 		};
 
 		class save {
@@ -64,6 +56,12 @@ class CfgFunctions {
 			// Event Save Functions	
 			class saveKill {};
 			class updateKills {};
+		};
+
+		class triggers {
+			file = "functions\triggers";
+			class checkSaveCivilians {};
+			class checkAAObjective {};
 		};
 	};
 };

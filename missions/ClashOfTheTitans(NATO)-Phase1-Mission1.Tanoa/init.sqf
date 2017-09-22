@@ -4,7 +4,7 @@ waitUntil {time > 0};
 // Setup the Server.
 if(isServer) then {
 	// Setup Faction Relationships
-	civilian setFriend [EAST, 1];
+	civilian setFriend [EAST, .7];
 	civilian setFriend [WEST, 1];
 
 	// Setup serverID

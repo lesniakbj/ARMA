@@ -1,3 +1,3 @@
-params["_civArr", "_triggerZone"];
+params["_civGroup", "_triggerZone"];
 if(!isServer) exitWith {};
-{ [_x, _triggerZone] spawn DK_fnc_generateUnitWaypoint; } forEach _civArr;
+{ [_x, _triggerZone] spawn DK_fnc_generateUnitWaypoint; } forEach units _civGroup;

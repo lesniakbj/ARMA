@@ -8,14 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1152;
+		nextID=1154;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
 	};
 	class Camera
 	{
-		pos[]={13149.344,63.985989,2225.7021};
-		dir[]={-0.74359548,-0.24950331,-0.62033367};
-		up[]={-0.19158877,0.96837395,-0.15983003};
-		aside[]={-0.64059311,-7.4505806e-008,0.7678805};
+		pos[]={13438.93,79.025116,2775.0332};
+		dir[]={0.40231776,-0.78713804,0.46752521};
+		up[]={0.51342738,0.61677074,0.59664327};
+		aside[]={0.75799757,4.3544424e-007,-0.65227836};
 	};
 };
 binarizationWanted=0;
@@ -38,13 +42,14 @@ addons[]=
 	"A3_Structures_F_EPA_Civ_Constructions",
 	"A3_Characters_F_Orange",
 	"A3_Characters_F",
-	"rhs_c_trucks"
+	"rhs_c_trucks",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=17;
+		items=18;
 		class Item0
 		{
 			className="rhsusf_c_troops";
@@ -154,6 +159,13 @@ class AddonsMetaData
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
+		class Item17
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=1106743;
@@ -178,8 +190,8 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="SharedObjectives";
-			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			property="ReviveRequiredItems";
+			expression="false";
 			class Value
 			{
 				class data
@@ -266,8 +278,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="ReviveRequiredItems";
-			expression="false";
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
 			class Value
 			{
 				class data
@@ -311,7 +323,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=168;
+		items=169;
 		class Item0
 		{
 			dataType="Group";
@@ -9636,6 +9648,15 @@ class Mission
 			id=1151;
 			type="EmptyDetectorArea10x10";
 			atlOffset=0.79200006;
+		};
+		class Item168
+		{
+			dataType="Marker";
+			position[]={13510.54,0,2966.8711};
+			name="EnterMarker";
+			type="loc_Quay";
+			id=1153;
+			atlOffset=-5.5102596;
 		};
 	};
 	class Connections

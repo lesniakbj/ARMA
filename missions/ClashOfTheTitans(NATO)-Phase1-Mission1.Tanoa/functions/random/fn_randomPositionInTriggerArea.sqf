@@ -2,7 +2,8 @@ params["_triggerZone"];
 if(!isServer) exitWith {};
 
 private _trgArea = triggerArea _triggerZone;
-_trgArea params ["_trgCenter", "_trgA", "_trgB", "_angle", "_trgIsRectangle"];
+private _trgCenter = getPos _triggerZone;
+_trgArea params ["_trgA", "_trgB", "_angle", "_trgIsRectangle"];
 
 // Generate Coordinates
 private _offset = [];
@@ -22,7 +23,7 @@ if(_trgIsRectangle) then {
 };
 
 // Translate the Offset to the WorldModel Pos and Rotation of Trigger at Ground Level
-_rotatedPos = [_offset, _angle] call BIS_fnc_rotateVector2D;
-_transPos = _triggerZone modelToWorld _rotatedPos;
+// _rotatedPos = [_offset, _angle] call BIS_fnc_rotateVector2D;
+_transPos = _triggerZone modelToWorld _offset;
 _transPos = ASLToATL _transPos;
 _transPos;
