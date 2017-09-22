@@ -16,7 +16,7 @@
 	Returns:
 		GROUP - The Civilian Group that was Created
  */
-params["_triggerZone", ["_civRange", [8, 15]], ["_behavior", "SAFE"], ["_partiallDestroyed", false], ["_createCivStatic", false], ["_createOpForStatic", false]];
+params["_triggerZone", ["_civRange", [8, 15]], ["_behavior", "SAFE"], ["_destroyed", false], ["_civStatics", false], ["_opForStatic", false]];
 if(!isServer) exitWith {};
 
 // Create the Standard Civilians in the Area
@@ -26,7 +26,7 @@ private _civGroup = [_numCivs, _civClasses, _behavior, _triggerZone] call DK_fnc
 
 // If the area is "War-Torn", destroy some buildings.
 private _buildings = [_triggerZone] call DK_fnc_searchAreaForBuildings;
-if(_partiallDestroyed) then {
+if(_destroyed) then {
 	_buildings = [_buildings, _triggerZone] call DK_fnc_damageBuildings;
 };
 
@@ -34,12 +34,12 @@ if(_partiallDestroyed) then {
 [_civGroup, _buildings] call DK_fnc_generateBuildingSpawns;
 
 // Create Set Pieces, we want support for Civ/OPFOR Statics
-if(_createCivStatic || _createOpForStatic) then {
+if(_civStatics || _opForStatic) then {
 
 };
 
 // Create Random "Scripted" Waypoints
-[_civGroup, _triggerZone] call DK_fnc_generateRandomWaypoints;
+[_civGroup, _triggerZone, _buildings] call DK_fnc_generateCivilianWaypoints;
 
 // Return the CivArr
 _civGroup;
