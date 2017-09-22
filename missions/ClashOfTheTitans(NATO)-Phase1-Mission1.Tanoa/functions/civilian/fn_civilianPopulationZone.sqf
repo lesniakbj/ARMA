@@ -1,6 +1,6 @@
 /*
 	Author: 
-		Doctork Kamikaze
+		Doctor Kamikaze
 
 	Description:
 		Ambient Civilian Life Zone
@@ -19,10 +19,14 @@
 params["_triggerZone", ["_civRange", [8, 15]], ["_behavior", "SAFE"], ["_destroyed", false], ["_civStatics", false], ["_opForStatic", false]];
 if(!isServer) exitWith {};
 
+// Add Private Functions Here
+_funcHandle = [] execVM "functions\civilian\generator\generatorFunctions.sqf";
+waitUntil { scriptDone _funcHandle };
+
 // Create the Standard Civilians in the Area
 private _numCivs = _civRange call DK_fnc_randomBetween;
-private _civClasses = [worldName] call DK_fnc_getCivilianClasses;
-private _civGroup = [_numCivs, _civClasses, _behavior, _triggerZone] call DK_fnc_generateCivilianGroupInArea;
+private _civClasses = [worldName] call DK_fnc_civilianClasses;
+private _civGroup = [_numCivs, _civClasses, _behavior, _triggerZone] call DK_fnc_generateCivilianGroup;
 
 // If the area is "War-Torn", destroy some buildings.
 private _buildings = [_triggerZone] call DK_fnc_searchAreaForBuildings;
