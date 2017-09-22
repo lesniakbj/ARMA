@@ -8,11 +8,11 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1349;
+		nextID=1406;
 	};
 	class MarkerIDProvider
 	{
-		nextID=1;
+		nextID=3;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={13004.979,115.92786,1968.9277};
-		dir[]={-0.29568616,-0.39667827,0.86903602};
-		up[]={-0.12777525,0.91795635,0.3755371};
-		aside[]={0.94670582,4.9962546e-007,0.32211331};
+		pos[]={13577.119,47.111385,3029.5564};
+		dir[]={-0.65078509,-0.55806124,-0.51492143};
+		up[]={-0.43765563,0.82977843,-0.34628633};
+		aside[]={-0.62052292,3.8731378e-007,0.7842499};
 	};
 };
 binarizationWanted=0;
@@ -351,7 +351,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=174;
+		items=187;
 		class Item0
 		{
 			dataType="Group";
@@ -364,125 +364,134 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13706.967,0.0014388561,3022.4019};
-						angles[]={0,0.5882796,0};
+						position[]={13706.967,0.0015208721,3022.4021};
+						angles[]={0,0.58828068,0};
 					};
 					side="West";
 					flags=2;
 					class Attributes
 					{
+						skill=0.7965433;
+						name="SupportCraftD";
 					};
 					id=2;
 					type="rhsusf_socom_swcc_officer";
-					atlOffset=9.2539196;
+					atlOffset=9.2539997;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13706.967,0.0014388561,3022.4019};
-						angles[]={0,0.5882796,0};
+						position[]={13706.967,0.0015208721,3022.4021};
+						angles[]={0,0.58828068,0};
 					};
 					side="West";
 					class Attributes
 					{
+						skill=0.7965433;
+						name="SupportCraftC";
 					};
 					id=3;
 					type="rhsusf_socom_swcc_crewman";
-					atlOffset=9.2539196;
+					atlOffset=9.2539997;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13706.967,0.0014388561,3022.4019};
-						angles[]={0,0.5882796,0};
+						position[]={13706.967,0.0015208721,3022.4021};
+						angles[]={0,0.58828068,0};
 					};
 					side="West";
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=4;
 					type="rhsusf_socom_swcc_crewman";
-					atlOffset=9.2539196;
+					atlOffset=9.2539997;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13706.967,0.0014388561,3022.4019};
-						angles[]={0,0.5882796,0};
+						position[]={13706.967,0.0015208721,3022.4021};
+						angles[]={0,0.58828068,0};
 					};
 					side="West";
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=5;
 					type="rhsusf_socom_swcc_crewman";
-					atlOffset=9.2539196;
+					atlOffset=9.2539997;
 				};
 				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13706.967,0.0014388561,3022.4019};
-						angles[]={0,0.5882796,0};
+						position[]={13706.967,0.0015208721,3022.4021};
+						angles[]={0,0.58828068,0};
 					};
 					side="West";
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=6;
 					type="rhsusf_socom_swcc_crewman";
-					atlOffset=9.2539196;
+					atlOffset=9.2539997;
 				};
 				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13706.967,0.0014388561,3022.4019};
-						angles[]={0,0.5882796,0};
+						position[]={13706.967,0.0015208721,3022.4021};
+						angles[]={0,0.58828068,0};
 					};
 					side="West";
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=7;
 					type="rhsusf_socom_swcc_officer";
-					atlOffset=9.2539196;
+					atlOffset=9.2539997;
 				};
 				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13706.967,0.0014388561,3022.4019};
-						angles[]={0,0.5882796,0};
+						position[]={13706.967,0.0015208721,3022.4021};
+						angles[]={0,0.58828068,0};
 					};
 					side="West";
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=8;
 					type="rhsusf_socom_swcc_officer";
-					atlOffset=9.2539196;
+					atlOffset=9.2539997;
 				};
 				class Item7
 				{
 					dataType="Waypoint";
-					position[]={14703.399,0,4316.6079};
+					position[]={14703.4,-0.00029754639,4316.6079};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=1304;
 					type="Move";
-					atlOffset=57.122257;
+					atlOffset=57.122005;
 				};
 			};
 			class Attributes
@@ -577,24 +586,25 @@ class Mission
 				};
 			};
 			id=0;
-			atlOffset=9.2539196;
+			atlOffset=9.2539997;
 		};
 		class Item1
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={13706.967,3.5662911,3022.3518};
-				angles[]={0,0.5882796,0};
+				position[]={13706.967,3.5663731,3022.3521};
+				angles[]={0,0.58828068,0};
 			};
 			side="West";
 			flags=2;
 			class Attributes
 			{
+				name="SupportCraft";
 			};
 			id=1;
 			type="rhsusf_mkvsoc";
-			atlOffset=9.2539196;
+			atlOffset=9.2539997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -637,7 +647,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.55000001;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 					};
 					id=21;
@@ -654,7 +664,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=22;
 					type="rhs_msv_machinegunner";
@@ -671,7 +681,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=23;
 					type="rhs_msv_at";
@@ -688,7 +698,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=24;
 					type="rhs_msv_strelok_rpg_assist";
@@ -729,7 +739,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.55000001;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 					};
 					id=26;
@@ -747,7 +757,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=27;
 					type="rhs_msv_machinegunner";
@@ -764,7 +774,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=28;
 					type="rhs_msv_at";
@@ -781,7 +791,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=29;
 					type="rhs_msv_strelok_rpg_assist";
@@ -824,7 +834,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						init="call{[this] call DK_fnc_spawnStaticUnit;}";
 					};
@@ -904,7 +914,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						init="call{[this] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -984,7 +994,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						init="call{[this] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -1045,7 +1055,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						init="call{[this] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -1125,7 +1135,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						init="call{[this] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=35;
@@ -1240,7 +1250,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 					};
 					id=45;
@@ -1300,7 +1310,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 					};
 					id=46;
 					type="rhs_msv_rifleman";
@@ -1318,7 +1328,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 					};
 					id=47;
 					type="rhs_msv_rifleman";
@@ -1451,6 +1461,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 						init="call{[this, ""WATCH2"", """", """", false, true] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=55;
@@ -1529,6 +1540,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						skill=0.7965433;
 						init="call{[this, ""WATCH"", """", """", false, true]  call DK_fnc_spawnStaticUnit;}";
 					};
 					id=56;
@@ -1588,6 +1600,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 						init="call{[this, ""DK_STATIC"", ""AWARE"", ""UP"", false, true] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=427;
@@ -1667,6 +1680,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 						init="call{this disableAI ""MOVE"";" \n "[this, ""DK_STATIC"", ""AWARE"", ""UP"", false, true] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=885;
@@ -1875,6 +1889,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						skill=0.7965433;
 						rank="SERGEANT";
 					};
 					id=58;
@@ -1892,7 +1907,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=59;
 					type="rhs_vdv_recon_arifleman";
@@ -1910,7 +1925,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=60;
 					type="rhs_vdv_recon_machinegunner_assistant";
@@ -2005,7 +2020,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						rank="MAJOR";
 						isPlayer=1;
 						isPlayable=1;
@@ -2068,7 +2083,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						rank="CORPORAL";
 						isPlayable=1;
 						stance="Middle";
@@ -2088,7 +2103,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						isPlayable=1;
 						stance="Middle";
 					};
@@ -2107,7 +2122,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						rank="CORPORAL";
 						isPlayable=1;
 						stance="Middle";
@@ -2127,7 +2142,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						rank="CORPORAL";
 						isPlayable=1;
 						stance="Middle";
@@ -2147,7 +2162,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						isPlayable=1;
 						stance="Middle";
 					};
@@ -2167,7 +2182,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						isPlayable=1;
 						stance="Middle";
 					};
@@ -2187,7 +2202,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						rank="CAPTAIN";
 						isPlayable=1;
 						stance="Middle";
@@ -2249,7 +2264,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						rank="CORPORAL";
 						isPlayable=1;
 						stance="Middle";
@@ -2269,7 +2284,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						isPlayable=1;
 						stance="Middle";
@@ -2331,7 +2346,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						rank="CORPORAL";
 						isPlayable=1;
 						stance="Middle";
@@ -2352,7 +2367,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						rank="SERGEANT";
 						isPlayable=1;
 						stance="Middle";
@@ -2372,7 +2387,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						rank="CORPORAL";
 						isPlayable=1;
 						stance="Middle";
@@ -2393,7 +2408,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						rank="CORPORAL";
 						isPlayable=1;
 						stance="Middle";
@@ -2413,7 +2428,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						isPlayable=1;
 						stance="Middle";
 					};
@@ -2432,7 +2447,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						isPlayable=1;
 						stance="Middle";
 					};
@@ -2451,7 +2466,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						isPlayable=1;
 						stance="Middle";
 					};
@@ -3171,6 +3186,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=278;
 					type="pook_opfor_AA_soldier";
@@ -3187,6 +3203,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=279;
 					type="pook_opfor_AA_soldier";
@@ -3203,6 +3220,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=280;
 					type="pook_opfor_AA_soldier";
@@ -3219,6 +3237,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=318;
 					type="pook_opfor_AA_soldier";
@@ -3235,6 +3254,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=324;
 					type="pook_opfor_AA_soldier";
@@ -3252,6 +3272,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=329;
 					type="pook_opfor_AA_soldier";
@@ -3269,6 +3290,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 						init="call{this disableAI ""PATH"";}";
 					};
 					id=293;
@@ -3328,6 +3350,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=295;
 					type="pook_opfor_AA_soldier";
@@ -3344,6 +3367,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=294;
 					type="pook_opfor_AA_soldier";
@@ -6871,6 +6895,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=848;
 					type="O_soldier_UAV_06_F";
@@ -7315,6 +7340,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						skill=0.7965433;
 						init="call{[this, ""WATCH""] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=864;
@@ -7393,6 +7419,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						skill=0.7965433;
 						init="call{[this] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=867;
@@ -7453,6 +7480,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						skill=0.7965433;
 						init="call{[this, ""WATCH2""] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=868;
@@ -7708,6 +7736,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						skill=0.7965433;
 						rank="SERGEANT";
 					};
 					id=903;
@@ -7725,7 +7754,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=904;
 					type="rhs_vdv_recon_arifleman";
@@ -7743,7 +7772,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=905;
 					type="rhs_vdv_recon_machinegunner_assistant";
@@ -7861,6 +7890,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						skill=0.7965433;
 						rank="SERGEANT";
 					};
 					id=919;
@@ -7879,7 +7909,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=920;
 					type="rhs_vdv_recon_arifleman";
@@ -7897,7 +7927,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=921;
 					type="rhs_vdv_recon_machinegunner_assistant";
@@ -8100,6 +8130,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						skill=0.7965433;
 						rank="SERGEANT";
 					};
 					id=1118;
@@ -8117,7 +8148,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.44999999;
+						skill=0.7965433;
 						rank="CORPORAL";
 					};
 					id=1119;
@@ -8135,7 +8166,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1120;
 					type="rhs_vdv_machinegunner";
@@ -8152,6 +8183,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=1121;
 					type="rhs_vdv_driver";
@@ -8168,7 +8200,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1122;
 					type="rhs_vdv_machinegunner";
@@ -8185,7 +8217,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1123;
 					type="rhs_vdv_machinegunner_assistant";
@@ -8202,7 +8234,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1124;
 					type="rhs_vdv_LAT";
@@ -8219,6 +8251,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						skill=0.7965433;
 						rank="SERGEANT";
 					};
 					id=1109;
@@ -8237,7 +8270,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1114;
 					type="rhs_vdv_machinegunner";
@@ -8255,6 +8288,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=1113;
 					type="rhs_vdv_driver";
@@ -8271,7 +8305,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.44999999;
+						skill=0.7965433;
 						rank="CORPORAL";
 					};
 					id=1110;
@@ -8289,7 +8323,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1116;
 					type="rhs_vdv_LAT";
@@ -8306,7 +8340,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1111;
 					type="rhs_vdv_machinegunner";
@@ -8324,7 +8358,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1115;
 					type="rhs_vdv_machinegunner_assistant";
@@ -8683,6 +8717,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						skill=0.7965433;
 						rank="SERGEANT";
 					};
 					id=1128;
@@ -8700,7 +8735,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.44999999;
+						skill=0.7965433;
 						rank="CORPORAL";
 					};
 					id=1129;
@@ -8718,7 +8753,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1130;
 					type="rhs_vdv_machinegunner";
@@ -8735,6 +8770,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=1131;
 					type="rhs_vdv_driver";
@@ -8751,7 +8787,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1132;
 					type="rhs_vdv_machinegunner";
@@ -8768,7 +8804,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1133;
 					type="rhs_vdv_machinegunner_assistant";
@@ -8785,7 +8821,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1134;
 					type="rhs_vdv_LAT";
@@ -8802,6 +8838,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						skill=0.7965433;
 						rank="SERGEANT";
 					};
 					id=1135;
@@ -8819,7 +8856,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1136;
 					type="rhs_vdv_machinegunner";
@@ -8836,6 +8873,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						skill=0.7965433;
 					};
 					id=1137;
 					type="rhs_vdv_driver";
@@ -8852,7 +8890,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.44999999;
+						skill=0.7965433;
 						rank="CORPORAL";
 					};
 					id=1138;
@@ -8870,7 +8908,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1139;
 					type="rhs_vdv_LAT";
@@ -8887,7 +8925,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1140;
 					type="rhs_vdv_machinegunner";
@@ -8904,7 +8942,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1141;
 					type="rhs_vdv_machinegunner_assistant";
@@ -9387,7 +9425,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={13510.54,0,2966.8711};
-			name="EnterMarker";
+			name="BeginMarker";
 			type="loc_Quay";
 			id=1153;
 			atlOffset=-5.5102596;
@@ -9744,7 +9782,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
@@ -9806,7 +9844,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -9868,7 +9906,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -9929,7 +9967,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -9991,7 +10029,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -10066,7 +10104,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
@@ -10128,7 +10166,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -10190,7 +10228,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -10251,7 +10289,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -10312,7 +10350,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -10387,7 +10425,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
@@ -10450,7 +10488,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -10511,7 +10549,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -10573,7 +10611,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -10635,7 +10673,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.79993224;
+						skill=0.7965433;
 						init="call{[this, ""DK_STATIC"", ""SAFE"", ""MIDDLE""] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
@@ -10711,7 +10749,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.55000001;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 					};
 					id=1208;
@@ -10729,7 +10767,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1209;
 					type="rhs_msv_machinegunner";
@@ -10745,7 +10783,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1210;
 					type="rhs_msv_machinegunner_assistant";
@@ -10761,7 +10799,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1211;
 					type="rhs_msv_grenadier";
@@ -10778,7 +10816,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1212;
 					type="rhs_msv_marksman";
@@ -10823,7 +10861,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.55000001;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 					};
 					id=1214;
@@ -10841,7 +10879,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1215;
 					type="rhs_msv_machinegunner";
@@ -10858,7 +10896,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1216;
 					type="rhs_msv_machinegunner_assistant";
@@ -10874,7 +10912,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1217;
 					type="rhs_msv_grenadier";
@@ -10890,7 +10928,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1218;
 					type="rhs_msv_rifleman";
@@ -11016,7 +11054,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.60000002;
+						skill=0.7965433;
 						rank="CAPTAIN";
 						init="call{[this, ""WATCH2"", """", """", false, true] call DK_fnc_spawnStaticUnit;}";
 					};
@@ -11077,7 +11115,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.55000001;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						init="call{[this] call DK_fnc_spawnStaticUnit;}";
 					};
@@ -11138,7 +11176,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.55000001;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						init="call{[this, ""WATCH1"", """", """", false, true] call DK_fnc_spawnStaticUnit;}";
 					};
@@ -11200,6 +11238,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						skill=0.7965433;
 						rank="SERGEANT";
 						init="call{[this] call DK_fnc_spawnStaticUnit;}";
 					};
@@ -11358,7 +11397,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						init="call{[this, ""STAND2"", """", """", false, true] call DK_fnc_spawnStaticUnit;}";
 						stance="Up";
@@ -11439,7 +11478,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						init="call{[this, ""WATCH2"", """", """", false, true] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=1246;
@@ -11499,7 +11538,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						init="call{[this, ""WATCH1"", """", """", false, true] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=1247;
@@ -11559,7 +11598,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						init="call{[this] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=1248;
@@ -11654,7 +11693,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						init="call{[this, ""STAND2"", """", """", false, true] call DK_fnc_spawnStaticUnit;}";
 						stance="Up";
@@ -11735,7 +11774,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						init="call{[this, ""WATCH2"", """", """", false, true] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=1251;
@@ -11796,7 +11835,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						init="call{[this, ""WATCH1"", """", """", false, true] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=1252;
@@ -11857,7 +11896,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						init="call{[this] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=1253;
@@ -11951,7 +11990,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						stance="Up";
 					};
@@ -12032,7 +12071,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 					};
 					id=1256;
 					type="rhs_vdv_mflora_strelok_rpg_assist";
@@ -12183,7 +12222,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						stance="Up";
 					};
@@ -12264,7 +12303,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 					};
 					id=1264;
 					type="rhs_vdv_mflora_strelok_rpg_assist";
@@ -12442,7 +12481,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						init="call{[this, ""WATCH1"", """", """", false, true] call DK_fnc_spawnStaticUnit;}";
 						stance="Up";
@@ -12524,7 +12563,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						init="call{[this, ""WATCH1"", """", """", false, true] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=1274;
@@ -12620,7 +12659,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						stance="Up";
 					};
@@ -12700,7 +12739,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 					};
 					id=1277;
 					type="rhs_vdv_mflora_strelok_rpg_assist";
@@ -12877,7 +12916,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						stance="Up";
 					};
@@ -12958,7 +12997,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 					};
 					id=1287;
 					type="rhs_vdv_mflora_strelok_rpg_assist";
@@ -13037,7 +13076,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 					};
 					id=1291;
 					type="rhs_vdv_mflora_strelok_rpg_assist";
@@ -13115,7 +13154,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.40000001;
+						skill=0.7965433;
 					};
 					id=1293;
 					type="rhs_msv_marksman";
@@ -13230,7 +13269,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						rank="LIEUTENANT";
 						init="call{[this, ""WATCH1"", """", """", false, true] call DK_fnc_spawnStaticUnit;}";
 						stance="Up";
@@ -13311,7 +13350,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						skill=0.80332053;
+						skill=0.7965433;
 						init="call{[this, ""WATCH1"", """", """", false, true] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=1303;
@@ -13567,6 +13606,968 @@ class Mission
 			id=1347;
 			type="C_Offroad_02_unarmed_F";
 			atlOffset=-0.0045137405;
+		};
+		class Item174
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12584.413,8.9902878,2571.3467};
+				angles[]={0,6.0539284,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1349;
+			type="Land_PortableLight_double_F";
+		};
+		class Item175
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12573.617,7.4561172,2574.0903};
+				angles[]={0,0.60008717,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1350;
+			type="Land_PortableLight_double_F";
+		};
+		class Item176
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12595.787,6.0654626,2408.3938};
+				angles[]={0,4.9337978,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1351;
+			type="Land_PortableLight_double_F";
+		};
+		class Item177
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12580.02,6.5146008,2396.9097};
+				angles[]={0,6.0990219,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1352;
+			type="Land_PortableLight_double_F";
+		};
+		class Item178
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12495.892,10.646125,2358.9033};
+				angles[]={0,4.4318104,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1353;
+			type="Land_PortableLight_double_F";
+		};
+		class Item179
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12448.141,5.5038133,2517.9412};
+				angles[]={0,2.8856583,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1354;
+			type="Land_PortableLight_double_F";
+		};
+		class Item180
+		{
+			dataType="Marker";
+			position[]={13897.753,0,1618.163};
+			name="SupportSpawn";
+			type="mil_circle";
+			alpha=0.050999645;
+			id=1355;
+			atlOffset=45.951603;
+		};
+		class Item181
+		{
+			dataType="Marker";
+			position[]={12984.093,0,2070.97};
+			name="SupportLandMarker";
+			type="loc_Quay";
+			id=1356;
+			atlOffset=-1.2786742;
+		};
+		class Item182
+		{
+			dataType="Marker";
+			position[]={12617.635,0,2313.1121};
+			name="AttackMarker1";
+			text="Ambush Point";
+			type="mil_ambush";
+			a=1.5;
+			b=2;
+			angle=241.33797;
+			id=1357;
+			atlOffset=-16.786699;
+		};
+		class Item183
+		{
+			dataType="Marker";
+			position[]={12706.017,0,2512.981};
+			name="AttackMarker2";
+			text="Ambush Point";
+			type="mil_ambush";
+			a=1.5;
+			b=2;
+			angle=167.086;
+			id=1358;
+			atlOffset=-22.499746;
+		};
+		class Item184
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=7;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+						angles[]={0,0.877675,0};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						skill=0.7965433;
+						rank="SERGEANT";
+						isPlayable=1;
+					};
+					id=1365;
+					type="rhsusf_usmc_marpat_wd_squadleader";
+					atlOffset=9.2539997;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+						angles[]={0,0.877675,0};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						rank="CORPORAL";
+						isPlayable=1;
+					};
+					id=1366;
+					type="rhsusf_usmc_marpat_wd_teamleader";
+					atlOffset=9.2539997;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+						angles[]={0,0.877675,0};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						isPlayable=1;
+					};
+					id=1367;
+					type="rhsusf_usmc_marpat_wd_machinegunner";
+					atlOffset=9.2539997;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+						angles[]={0,0.877675,0};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						rank="CORPORAL";
+						isPlayable=1;
+					};
+					id=1368;
+					type="rhsusf_usmc_marpat_wd_machinegunner_ass";
+					atlOffset=9.2539997;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+						angles[]={0,0.877675,0};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						rank="CORPORAL";
+						isPlayable=1;
+					};
+					id=1369;
+					type="rhsusf_usmc_marpat_wd_teamleader";
+					atlOffset=9.2539997;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+						angles[]={0,0.877675,0};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						isPlayable=1;
+					};
+					id=1370;
+					type="rhsusf_usmc_marpat_wd_machinegunner";
+					atlOffset=9.2539997;
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+						angles[]={0,0.877675,0};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						isPlayable=1;
+					};
+					id=1371;
+					type="rhsusf_usmc_marpat_wd_machinegunner_ass";
+					atlOffset=9.2539997;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=7;
+				};
+				class Links
+				{
+					items=7;
+					class Item0
+					{
+						linkID=0;
+						item0=1365;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=0;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=1366;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=1;
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=1367;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=2;
+						};
+					};
+					class Item3
+					{
+						linkID=3;
+						item0=1368;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=3;
+						};
+					};
+					class Item4
+					{
+						linkID=4;
+						item0=1369;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=4;
+						};
+					};
+					class Item5
+					{
+						linkID=5;
+						item0=1370;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=5;
+						};
+					};
+					class Item6
+					{
+						linkID=6;
+						item0=1371;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=6;
+						};
+					};
+				};
+			};
+			id=1364;
+			atlOffset=9.2539997;
+		};
+		class Item185
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=13;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						skill=0.7965433;
+						rank="SERGEANT";
+						isPlayable=1;
+					};
+					id=1373;
+					type="rhsusf_usmc_marpat_wd_squadleader";
+					atlOffset=9.2539997;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						rank="CORPORAL";
+						isPlayable=1;
+					};
+					id=1374;
+					type="rhsusf_usmc_marpat_wd_teamleader";
+					atlOffset=9.2539997;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						isPlayable=1;
+					};
+					id=1375;
+					type="rhsusf_usmc_marpat_wd_autorifleman";
+					atlOffset=9.2539997;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						rank="CORPORAL";
+						isPlayable=1;
+					};
+					id=1376;
+					type="rhsusf_usmc_marpat_wd_rifleman_m4";
+					atlOffset=9.2539997;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						isPlayable=1;
+					};
+					id=1377;
+					type="rhsusf_usmc_marpat_wd_rifleman_m4";
+					atlOffset=9.2539997;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						rank="CORPORAL";
+						isPlayable=1;
+					};
+					id=1378;
+					type="rhsusf_usmc_marpat_wd_teamleader";
+					atlOffset=9.2539997;
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						isPlayable=1;
+					};
+					id=1379;
+					type="rhsusf_usmc_marpat_wd_autorifleman";
+					atlOffset=9.2539997;
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						isPlayable=1;
+					};
+					id=1380;
+					type="rhsusf_usmc_marpat_wd_rifleman_m4";
+					atlOffset=9.2539997;
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						isPlayable=1;
+					};
+					id=1381;
+					type="rhsusf_usmc_marpat_wd_riflemanat";
+					atlOffset=9.2539997;
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						rank="CORPORAL";
+						isPlayable=1;
+					};
+					id=1382;
+					type="rhsusf_usmc_marpat_wd_teamleader";
+					atlOffset=9.2539997;
+				};
+				class Item10
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						isPlayable=1;
+					};
+					id=1383;
+					type="rhsusf_usmc_marpat_wd_autorifleman";
+					atlOffset=9.2539997;
+				};
+				class Item11
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						isPlayable=1;
+					};
+					id=1384;
+					type="rhsusf_usmc_marpat_wd_rifleman_m4";
+					atlOffset=9.2539997;
+				};
+				class Item12
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						isPlayable=1;
+					};
+					id=1385;
+					type="rhsusf_usmc_marpat_wd_marksman";
+					atlOffset=9.2539997;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=13;
+				};
+				class Links
+				{
+					items=13;
+					class Item0
+					{
+						linkID=0;
+						item0=1373;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=7;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=1374;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=8;
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=1375;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=9;
+						};
+					};
+					class Item3
+					{
+						linkID=3;
+						item0=1376;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=10;
+						};
+					};
+					class Item4
+					{
+						linkID=4;
+						item0=1377;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=11;
+						};
+					};
+					class Item5
+					{
+						linkID=5;
+						item0=1378;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=12;
+						};
+					};
+					class Item6
+					{
+						linkID=6;
+						item0=1379;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=13;
+						};
+					};
+					class Item7
+					{
+						linkID=7;
+						item0=1380;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=14;
+						};
+					};
+					class Item8
+					{
+						linkID=8;
+						item0=1381;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=15;
+						};
+					};
+					class Item9
+					{
+						linkID=9;
+						item0=1382;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=16;
+						};
+					};
+					class Item10
+					{
+						linkID=10;
+						item0=1383;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=17;
+						};
+					};
+					class Item11
+					{
+						linkID=11;
+						item0=1384;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=18;
+						};
+					};
+					class Item12
+					{
+						linkID=12;
+						item0=1385;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=19;
+						};
+					};
+				};
+			};
+			id=1372;
+			atlOffset=9.2539997;
+		};
+		class Item186
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						skill=0.7965433;
+						rank="SERGEANT";
+						isPlayable=1;
+					};
+					id=1387;
+					type="rhsusf_socom_marsoc_elementleader";
+					atlOffset=9.2539997;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						rank="CORPORAL";
+						isPlayable=1;
+					};
+					id=1388;
+					type="rhsusf_socom_marsoc_cso";
+					atlOffset=9.2539997;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						rank="CORPORAL";
+						isPlayable=1;
+					};
+					id=1389;
+					type="rhsusf_socom_marsoc_cso_breacher";
+					atlOffset=9.2539997;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						rank="CORPORAL";
+						isPlayable=1;
+					};
+					id=1390;
+					type="rhsusf_socom_marsoc_cso_mechanic";
+					atlOffset=9.2539997;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13706.967,0.0015208721,3022.4021};
+					};
+					side="West";
+					flags=1;
+					class Attributes
+					{
+						skill=0.7965433;
+						rank="CORPORAL";
+						isPlayable=1;
+					};
+					id=1391;
+					type="rhsusf_socom_marsoc_sarc";
+					atlOffset=9.2539997;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=5;
+				};
+				class Links
+				{
+					items=5;
+					class Item0
+					{
+						linkID=0;
+						item0=1387;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=20;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=1388;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=21;
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=1389;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=22;
+						};
+					};
+					class Item3
+					{
+						linkID=3;
+						item0=1390;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=23;
+						};
+					};
+					class Item4
+					{
+						linkID=4;
+						item0=1391;
+						item1=1;
+						class CustomData
+						{
+							role=3;
+							cargoIndex=24;
+						};
+					};
+				};
+			};
+			id=1386;
+			atlOffset=9.2539997;
 		};
 	};
 	class Connections

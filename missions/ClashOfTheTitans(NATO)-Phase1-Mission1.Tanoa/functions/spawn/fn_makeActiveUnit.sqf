@@ -20,8 +20,8 @@ _unit setUnitPos _unitPos;
 
 if(side _unit != civilian) then {
 	_nearest = _unit findNearestEnemy _unit;
-	_unit move (getPos _nearest);
+	_unit doMove (getPos _nearest);
 	_unit setBehaviour "COMBAT";
 } else {
-	_unit move (markerPos "EnterMarker");
+	_unit doMove (markerPos "BeginMarker");
 };
