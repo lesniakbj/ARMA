@@ -14,6 +14,7 @@ SupportCraft setDir _dir;
 SupportCraft doMove _landPoint;
 /*
 	{ unassignVehicle _x; _x action["getOut", vehicle _x]; } forEach (units SupportGroup1);
+	SupportGroup leaveVehicle (vehicle SupportGroup);
 	uiSleep 1;
 	{ unassignVehicle _x; _x action["Eject", vehicle _x]; } forEach (units SupportGroup2);
 	uiSleep 1;
