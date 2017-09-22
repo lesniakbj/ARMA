@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=7;
+		nextID=9;
 	};
 	class Camera
 	{
-		pos[]={13503.999,34.407379,2970.6868};
-		dir[]={-0.90604424,-0.40263104,-0.13087699};
-		up[]={-0.39856273,0.91532499,-0.05757115};
-		aside[]={-0.14297888,4.216563e-007,0.98980939};
+		pos[]={13356.829,7.6240292,2674.8191};
+		dir[]={0.42056739,-0.32762179,-0.84604204};
+		up[]={0.14583436,0.94480896,-0.29337412};
+		aside[]={-0.89546388,-1.5944242e-006,-0.44513437};
 	};
 };
 binarizationWanted=0;
@@ -277,8 +277,8 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="SharedObjectives";
-			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			property="ReviveRequiredItems";
+			expression="false";
 			class Value
 			{
 				class data
@@ -365,8 +365,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="ReviveRequiredItems";
-			expression="false";
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
 			class Value
 			{
 				class data

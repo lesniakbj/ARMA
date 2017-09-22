@@ -20,8 +20,12 @@ params["_triggerZone", ["_civRange", [8, 15]], ["_behavior", "SAFE"], ["_destroy
 if(!isServer) exitWith {};
 
 // Add Private Functions Here
-_funcHandle = [] execVM "functions\civilian\generator\generatorFunctions.sqf";
-waitUntil { scriptDone _funcHandle };
+_gen = [] execVM "functions\civilian\generator\generatorFunctions.sqf";
+waitUntil { scriptDone _gen };
+_build = [] execVM "functions\civilian\buildings\buildingFunctions.sqf";
+waitUntil { scriptDone _build };
+_move = [] execVM "functions\civilian\movement\movementFunctions.sqf";
+waitUntil { scriptDone _move };
 
 // Create the Standard Civilians in the Area
 private _numCivs = _civRange call DK_fnc_randomBetween;
@@ -29,9 +33,9 @@ private _civClasses = [worldName] call DK_fnc_civilianClasses;
 private _civGroup = [_numCivs, _civClasses, _behavior, _triggerZone] call DK_fnc_generateCivilianGroup;
 
 // If the area is "War-Torn", destroy some buildings.
-private _buildings = [_triggerZone] call DK_fnc_searchAreaForBuildings;
+private _buildings = [_triggerZone] call DK_fnc_searchForBuildings;
 if(_destroyed) then {
-	_buildings = [_buildings, _triggerZone] call DK_fnc_damageBuildings;
+	_buildings = [_buildings, _triggerZone] call DK_fnc_destroyBuildings;
 };
 
 // With the remaining buildings, move some spawns there.
@@ -43,7 +47,7 @@ if(_civStatics || _opForStatic) then {
 };
 
 // Create Random "Scripted" Waypoints
-[_civGroup, _triggerZone, _buildings] call DK_fnc_generateCivilianWaypoints;
+[_civGroup, _triggerZone, _buildings] call DK_fnc_applyWaypointLoop;
 
 // Return the CivArr
 _civGroup;

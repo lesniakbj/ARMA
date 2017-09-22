@@ -28,17 +28,6 @@ class CfgFunctions {
 
 			// Civilian Pop Zones Construction
 			class civilianPopulationZone {};
-			class getCivilianClasses {};
-			class generateCivilianGroupInArea {};
-
-			// Civilian Pop Zone Movement
-			class generateCivilianWaypoints {};
-			class civilianWaypointLoop {};
-
-			// Civilian Pop Zone Buildings
-			class searchAreaForBuildings {};
-			class generateBuildingSpawns {};
-			class damageBuildings {};
 		};
 
 		class save {
