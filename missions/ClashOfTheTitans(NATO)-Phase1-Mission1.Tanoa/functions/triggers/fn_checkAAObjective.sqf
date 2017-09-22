@@ -12,3 +12,11 @@ private _dir = SupportCraft getDir _landPoint;
 SupportCraft setPos _spawnPos;
 SupportCraft setDir _dir;
 SupportCraft doMove _landPoint;
+/*
+	{ _x action["getOut", vehicle _x]; } forEach (units SupportGroup1);
+	uiSleep 1;
+	{ _x action["getOut", vehicle _x]; } forEach (units SupportGroup2);
+	uiSleep 1;
+	{ _x action["getOut", vehicle _x]; } forEach (units SupportCraftGroup);
+	uiSleep 1;
+*/

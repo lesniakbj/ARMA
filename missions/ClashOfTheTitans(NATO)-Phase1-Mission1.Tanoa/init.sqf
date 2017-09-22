@@ -22,9 +22,16 @@ if(!isDedicated) then {
 	// Load our player stats
 	[] call DK_fnc_loadPlayerStats;
 
+	// Load their Mission Actions (If Any)
+	player addAction ["Show Current Stats", nil, [], 1];
+
 	// Setup Listeners to Save/Load Stats (player = Client Local)
 	// addMissionEventHandler ["PlayerConnected", DK_fnc_clearStats];
 	addMissionEventHandler ["EntityKilled", DK_fnc_saveKill];
+	addMissionEventHandler ["TeamSwitch", {
+		params["_oldUnit", "_newUnit"];
+		_newUnit addAction ["Show Current Stats", nil, [], 1];
+	}];
 
 	// Continously Saved Stats Here
 	[] spawn DK_fnc_savePlayerStatsLoop;
