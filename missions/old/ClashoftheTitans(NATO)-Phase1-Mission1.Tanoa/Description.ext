@@ -1,0 +1,67 @@
+class CfgFunctions {
+	class DK {
+		class util {};
+
+		class random {
+			file = "functions\random";
+			class randomBetween {};
+			class randomUnitInGroup {};
+			class randomPositionInTriggerArea {};
+		};
+		
+		class spawn {
+			file = "functions\spawn";
+
+			// Group Random
+			class addStrengthToGroup {};
+			class spawnRandomGroup {};
+
+			// Static Units
+			class spawnStaticUnit {};
+			class breakStaticCheck {};
+			class breakStaticEventHandler {};
+			class makeActiveUnit {};
+		};
+		
+		class civilian {
+			file = "functions\civilian";
+
+			// Civilian Pop Zones
+			class civilianPopulationZone {};
+			class getCivilianClasses {};
+			class generateCivilianGroupInArea {};
+			class generateBuildingSpawns {};
+			class generateRandomWaypoints {};
+			class generateUnitWaypoint {};
+
+			// Civilian Pop Zone Buildings
+			class searchAreaForBuildings {};
+			class damageBuildings {};
+		};
+
+		class save {
+			file = "functions\save";
+			// Init Functions
+			class setupServerID {};
+
+			// Loading Functions
+			class loadStat {};
+			class applyLoadedStat {};
+			class loadPlayerStats {};
+
+			// Saving Functions
+			class saveStat {};
+			class savePlayerStatsLoop {};
+
+			// Event Save Functions	
+			class saveKill {};
+			class updateKills {};
+		};
+
+		class triggers {
+			file = "functions\triggers";
+			class checkSaveCivilians {};
+			class checkAAObjective {};
+		};
+	};
+};
