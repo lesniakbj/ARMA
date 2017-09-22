@@ -13,10 +13,8 @@ SupportCraft setPos _spawnPos;
 SupportCraft setDir _dir;
 SupportCraft doMove _landPoint;
 /*
-	{ _x action["getOut", vehicle _x]; } forEach (units SupportGroup1);
+	{ unassignVehicle _x; _x action["getOut", vehicle _x]; } forEach (units SupportGroup1);
 	uiSleep 1;
-	{ _x action["getOut", vehicle _x]; } forEach (units SupportGroup2);
-	uiSleep 1;
-	{ _x action["getOut", vehicle _x]; } forEach (units SupportCraftGroup);
+	{ unassignVehicle _x; _x action["Eject", vehicle _x]; } forEach (units SupportGroup2);
 	uiSleep 1;
 */
