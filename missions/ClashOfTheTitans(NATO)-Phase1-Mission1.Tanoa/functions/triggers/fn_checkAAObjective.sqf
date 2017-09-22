@@ -13,6 +13,7 @@ SupportCraft setPos _spawnPos;
 SupportCraft setDir _dir;
 SupportCraft doMove _landPoint;
 /*
+	https://www.reddit.com/r/arma/comments/4k3glg/the_new_rhs_paradrop_waypoint_is_awesome/
 	{ unassignVehicle _x; _x action["getOut", vehicle _x]; } forEach (units SupportGroup1);
 	SupportGroup leaveVehicle (vehicle SupportGroup);
 	uiSleep 1;
