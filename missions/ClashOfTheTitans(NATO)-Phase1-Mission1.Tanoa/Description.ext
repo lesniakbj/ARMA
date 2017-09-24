@@ -59,3 +59,83 @@ class CfgFunctions {
 		};
 	};
 };
+
+class CfgRoles {
+	class Rifleman { 
+		displayName = "Rifleman"; 
+		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";
+	};
+
+	class Support { 
+		displayName = "Support"; 
+		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";
+	};
+};
+
+class CfgRespawnInventory {
+	class ARifleman { 
+		displayName = "Assualt Rifleman";
+		role = "Rifleman";
+		weapons[] = {"CUP_arifle_M4A1_camo_Aim","CUP_hgun_Colt1911","Binocular","Throw","Put"};
+		magazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_HandGrenade_M67","CUP_HandGrenade_M67","SmokeShell","SmokeShellPurple","CUP_7Rnd_45ACP_1911","CUP_7Rnd_45ACP_1911","CUP_7Rnd_45ACP_1911","CUP_7Rnd_45ACP_1911"};
+		Items[] = {"DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","FirstAidKit","FirstAidKit"};
+		linkedItems[] = {"CUP_V_B_RRV_DA1","CUP_H_FR_ECH","CUP_muzzle_snds_M16","CUP_NVG_PVS7","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS"};
+		uniformClass = "CUP_U_B_FR_DirAction";
+		backpack = "CUP_B_USMC_MOLLE_WDL";
+	};
+
+	class Marksman {
+		displayName = "Marksman";
+		role = "Rifleman";
+		weapons[] = {"CUP_srifle_SVD_pso","Throw","Put","Binocular"};
+		magazines[] = {"CUP_10Rnd_762x54_SVD_M","CUP_10Rnd_762x54_SVD_M","CUP_10Rnd_762x54_SVD_M","CUP_10Rnd_762x54_SVD_M","CUP_10Rnd_762x54_SVD_M","CUP_10Rnd_762x54_SVD_M","CUP_10Rnd_762x54_SVD_M","CUP_10Rnd_762x54_SVD_M","CUP_HandGrenade_RGD5","CUP_HandGrenade_RGD5","SmokeShell","SmokeShellOrange"};
+		Items[] = {"DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","FirstAidKit","FirstAidKit"};
+		linkedItems[] = {"CUP_H_CDF_H_PASGT_MNT","CUP_V_CDF_6B3_1_MNT","CUP_NVG_PVS7","ItemRadio","ItemWatch","ItemCompass","ItemMap","CUP_NVG_PVS7"};
+		uniformClass = "CUP_U_B_CDF_MNT_2";
+		backpack = "CUP_B_FR_MOLLE_Sab";
+	};
+
+	class AutoRifleman {
+		backpack = "CUP_B_CDF_MGPack";
+		displayName = "Auto Rifleman";
+		Items[] = {"DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","FirstAidKit","FirstAidKit"};
+		linkedItems[] = {"CUP_H_CDF_H_PASGT_MNT","CUP_V_CDF_6B3_3_MNT","CUP_NVG_PVS7","ItemRadio","ItemWatch","ItemCompass","ItemMap"};
+		magazines[] = {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"};
+		role = "Rifleman";
+		uniformClass = "CUP_U_B_CDF_MNT_2";
+		weapons[] = {"CUP_lmg_PKM","Throw","Put"};
+	};
+
+	class ReconFAC { 
+		backpack = "CUP_B_USMC_MOLLE_WDL";
+		displayName = "Recon FAC";
+		Items[] = {"DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","FirstAidKit", "FirstAidKit"};
+		linkedItems[] = {"CUP_V_B_RRV_Scout2","CUP_H_FR_BoonieMARPAT","CUP_NVG_PVS7","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS"};
+		magazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","SmokeShell","SmokeShell","CUP_1Rnd_HEDP_M203","CUP_1Rnd_HEDP_M203","CUP_1Rnd_HEDP_M203","CUP_1Rnd_HEDP_M203","CUP_FlareRed_M203","CUP_FlareGreen_M203","CUP_7Rnd_45ACP_1911","CUP_7Rnd_45ACP_1911","Laserbatteries"};
+		role = "Support";
+		uniformClass = "CUP_U_B_FR_Scout2";
+		weapons[] = {"CUP_arifle_M4A1_camo_GL_Holo_Flashlight_Snds","CUP_hgun_Colt1911","CUP_SOFLAM","Throw","Put"};
+	};
+
+	class Demo {
+		backpack = "CUP_B_FR_MOLLE_Sab";
+		displayName = "Demolitions";
+		Items[] = {"FirstAidKit","FirstAidKit"};
+		linkedItems[] = {"CUP_V_B_RRV_Scout3","CUP_H_FR_BeanieGreen","CUP_NVG_PVS7","CUP_muzzle_snds_M16","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS"};
+		magazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_PipeBomb_M","CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+		role = "Support";
+		uniformClass = "CUP_U_B_FR_Scout3";
+		weapons[] = {"CUP_arifle_M4A1_camo_Aim","CUP_hgun_M9_snds","Binocular","Throw","Put"};
+	};
+
+	class ATRifleman {
+		backpack = "CUP_B_CDF_RPG_Backpack";
+		displayName = "AT Rifleman";
+		Items[] = {"FirstAidKit","FirstAidKit"};
+		linkedItems[] = {"CUP_H_CDF_H_PASGT_MNT","CUP_V_CDF_6B3_2_MNT","CUP_NVG_PVS7","CUP_optic_Kobra","CUP_muzzle_PBS4","ItemRadio","ItemWatch","ItemCompass","ItemMap"};
+		magazines[] = {"CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_PG7VL_M","CUP_PG7VL_M","CUP_PG7VL_M"};
+		role = "Support";
+		uniformClass = "CUP_U_B_CDF_MNT_1";
+		weapons[] = {"CUP_arifle_AK74","CUP_launch_RPG7V","Throw","Put"};
+	};
+};

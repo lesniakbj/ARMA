@@ -40,7 +40,8 @@ if(_canBreakFree) then {
 		params["_unit", "_vehicle", "_distance"];
 		[_unit, _vehicle, _distance, _thisEventHandler] call DK_fnc_breakStaticEventHandler;
 	}];
-	[_unit, _staticAnimation] spawn DK_fnc_breakStaticCheck;
+	_breakStatic = [[_unit, _staticAnimation], DK_fnc_breakStaticCheck];
+	_breakStatic remoteExec ["spawn"];
 };
 
 _unit;
