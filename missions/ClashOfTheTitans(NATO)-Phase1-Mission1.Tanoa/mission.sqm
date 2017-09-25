@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1601;
+		nextID=1602;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=23;
+		nextID=31;
 	};
 	class Camera
 	{
-		pos[]={13384.232,63.252586,2755.3245};
-		dir[]={-0.24998666,-0.51689601,-0.81873399};
-		up[]={-0.15094526,0.85604829,-0.49436525};
-		aside[]={-0.95641124,7.0035458e-007,0.29202366};
+		pos[]={13497.39,32.054138,2942.585};
+		dir[]={0.50474238,-0.62136847,0.59930038};
+		up[]={0.40028161,0.78351378,0.47526941};
+		aside[]={0.76487875,-7.5664138e-007,-0.64419496};
 	};
 };
 binarizationWanted=0;
@@ -513,7 +513,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=212;
+		items=213;
 		class Item0
 		{
 			dataType="Group";
@@ -999,7 +999,7 @@ class Mission
 					{
 						skill=0.7965433;
 						rank="LIEUTENANT";
-						init="call{[this] call DK_fnc_spawnStaticUnit;}";
+						init="call{[this, ""DK_STATIC"", ""SAFE"", ""UP"", false, false] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=31;
 					type="rhs_msv_junior_sergeant";
@@ -1078,7 +1078,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.7965433;
-						init="call{[this] call DK_fnc_spawnStaticUnit;}";
+						init="call{[this, ""DK_STATIC"", ""SAFE"", ""UP"", false, false] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
 					id=32;
@@ -1158,7 +1158,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.7965433;
-						init="call{[this] call DK_fnc_spawnStaticUnit;}";
+						init="call{[this, ""DK_STATIC"", ""SAFE"", ""UP"", false, false] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
 					id=33;
@@ -1219,7 +1219,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.7965433;
-						init="call{[this] call DK_fnc_spawnStaticUnit;}";
+						init="call{[this, ""DK_STATIC"", ""SAFE"", ""UP"", false, false] call DK_fnc_spawnStaticUnit;}";
 						stance="Middle";
 					};
 					id=34;
@@ -1299,7 +1299,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.7965433;
-						init="call{[this] call DK_fnc_spawnStaticUnit;}";
+						init="call{[this, ""DK_STATIC"", ""SAFE"", ""UP"", false, false] call DK_fnc_spawnStaticUnit;}";
 					};
 					id=35;
 					type="rhs_msv_rifleman";
@@ -7245,7 +7245,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12929.973,15.943349,2205.2966};
+						position[]={12949.528,12.538719,2196.7539};
 						angles[]={0,1.0852981,0};
 					};
 					side="East";
@@ -7263,7 +7263,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12921.371,16.709866,2207.3303};
+						position[]={12940.927,14.49974,2198.7876};
 						angles[]={0,1.0852981,0};
 					};
 					side="East";
@@ -7274,14 +7274,14 @@ class Mission
 					};
 					id=904;
 					type="rhs_vdv_recon_arifleman";
-					atlOffset=0.00078773499;
+					atlOffset=0.00078487396;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12924.81,16.363106,2202.1995};
+						position[]={12938.758,14.989841,2209.4485};
 						angles[]={0,1.0852981,0};
 					};
 					side="East";
@@ -7292,12 +7292,12 @@ class Mission
 					};
 					id=905;
 					type="rhs_vdv_recon_machinegunner_assistant";
-					atlOffset=0.036239624;
+					atlOffset=-9.5367432e-007;
 				};
 				class Item3
 				{
 					dataType="Waypoint";
-					position[]={13060.39,16.517738,2294.9656};
+					position[]={12989.535,12.086466,2253.5093};
 					class Effects
 					{
 					};
@@ -7308,67 +7308,62 @@ class Mission
 				class Item4
 				{
 					dataType="Waypoint";
-					position[]={13138.538,6.6423278,2295.2485};
+					position[]={13085.965,2.137666,2195.0364};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=907;
 					type="Move";
-					atlOffset=0.00013017654;
 				};
 				class Item5
 				{
 					dataType="Waypoint";
-					position[]={13081.908,2.9404857,2217.0005};
+					position[]={13075.194,2.5913572,2182.2124};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=908;
 					type="Move";
-					atlOffset=9.8228455e-005;
 				};
 				class Item6
 				{
 					dataType="Waypoint";
-					position[]={13000.525,8.207737,2233.7139};
+					position[]={13000.069,8.5120354,2228.324};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=909;
 					type="Move";
-					atlOffset=1.335144e-005;
 				};
 				class Item7
 				{
 					dataType="Waypoint";
-					position[]={12896.046,8.7179108,2122.353};
+					position[]={12891.566,8.7293749,2093.4761};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=910;
 					type="Move";
-					atlOffset=0.00032520294;
 				};
 				class Item8
 				{
 					dataType="Waypoint";
-					position[]={12877.34,12.558379,2157.0027};
+					position[]={12873.101,12.631629,2101.6826};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=911;
 					type="Move";
-					atlOffset=-8.2015991e-005;
 				};
 				class Item9
 				{
 					dataType="Waypoint";
-					position[]={12917.348,16.463009,2194.2419};
+					position[]={12937.729,13.833203,2178.6218};
 					type="Cycle";
 					class Effects
 					{
@@ -14841,7 +14836,7 @@ class Mission
 		class Item201
 		{
 			dataType="Trigger";
-			position[]={13112.795,12.918409,2351.7319};
+			position[]={13086.856,15.531603,2299.2664};
 			angle=3.7588615;
 			class Attributes
 			{
@@ -14857,13 +14852,13 @@ class Mission
 			};
 			id=1589;
 			type="EmptyDetectorArea10x10";
-			atlOffset=0.59799957;
+			atlOffset=0.59764862;
 		};
 		class Item202
 		{
 			dataType="Trigger";
-			position[]={12654.385,12.694523,2263.5964};
-			angle=5.6279359;
+			position[]={12638.655,18.376225,2282.4961};
+			angle=5.8317194;
 			class Attributes
 			{
 				name="trg_Checkpoint2_1";
@@ -14878,13 +14873,13 @@ class Mission
 			};
 			id=1590;
 			type="EmptyDetectorArea10x10";
-			atlOffset=3.3380232;
+			atlOffset=2.2472935;
 		};
 		class Item203
 		{
 			dataType="Trigger";
-			position[]={12724.928,29.910986,2489.4275};
-			angle=4.4259806;
+			position[]={12723.099,28.988613,2507.4341};
+			angle=4.4706597;
 			class Attributes
 			{
 				name="trg_Checkpoint2_2";
@@ -14899,7 +14894,7 @@ class Mission
 			};
 			id=1591;
 			type="EmptyDetectorArea10x10";
-			atlOffset=3.3629684;
+			atlOffset=3.362999;
 		};
 		class Item204
 		{
@@ -15080,6 +15075,27 @@ class Mission
 			id=1600;
 			type="rhs_magazine_rhs_mag_m7a3_cs";
 			atlOffset=0.73851204;
+		};
+		class Item212
+		{
+			dataType="Trigger";
+			position[]={12851.95,16.847023,2182.8755};
+			angle=5.4877481;
+			class Attributes
+			{
+				name="trg_Checkpoint2_3";
+				condition="call{this;}";
+				onActivation="call{[WEST, getPos thisTrigger, ""North West of Local Village""] call BIS_fnc_addRespawnPosition;}";
+				sizeA=120;
+				sizeB=5;
+				sizeC=30;
+				activationBy="WEST";
+				isRectangle=1;
+				isServerOnly=1;
+			};
+			id=1601;
+			type="EmptyDetectorArea10x10";
+			atlOffset=0.72324371;
 		};
 	};
 	class Connections

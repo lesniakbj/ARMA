@@ -2,6 +2,14 @@ class CfgFunctions {
 	class DK {
 		class util {};
 
+		class mission {
+			file = "functions\mission";
+			class setupAmmoBoxes {};
+			class missionPrimaryWeapons {};
+			class missionSecondaryWeapons {};
+			class missionLauncherWeapons {};
+		};
+
 		class random {
 			file = "functions\random";
 			class randomBetween {};
