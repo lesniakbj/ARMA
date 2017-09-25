@@ -27,5 +27,9 @@ uiSleep 3;
 {  uiSleep 1; unassignVehicle _x; _x action["GetOut", vehicle _x];} forEach (units SupportGroup3);
 
 // Move them to their respective Ambush Points
+_wp1 = SupportGroup1 addWaypoint (getMarkerPos "AmbushSite1");
+_wp2 = SupportGroup2 addWaypoint (getMarkerPos "AmbushSite2");
+_wp3 = SupportGroup3 addWaypoint (getMarkerPos "AmbushSite1");
 
 // Add the Action to give the the GO command
+{ _x addAction ["Send GO Command", "{}", nil, 2, false, true]; } forEach allPlayers;
