@@ -10,13 +10,14 @@ waitUntil { ({alive _x} count units ObjectiveGroup1) == 0; };
 // Move the reenforcements to the captured beach
 // and add the "GO" code support to the playable
 // units when the group is in position. 
-// private _spawnPos = markerPos "SupportSpawn";
-// private _landPoint = markerPos "SupportLandMarker";
-// private _dir = SupportCraft getDir _landPoint;
-// SupportCraft setPos _spawnPos;
-// SupportCraft setDir _dir;
-// SupportCraft doMove _landPoint;
-// waitUntil {((speed SupportCraft) <= 5) && (SupportCraft distance _landPoint <= 100)};
+private _spawnPos = markerPos "SupportSpawn";
+private _landPoint = markerPos "SupportLandMarker";
+private _dir = SupportCraft getDir _landPoint;
+SupportCraft setPos _spawnPos;
+SupportCraft setDir _dir;
+SupportCraft setVelocityModelSpace [0, 10, 0];
+SupportCraft doMove _landPoint;
+waitUntil {((speed SupportCraft) <= 5) && (SupportCraft distance _landPoint <= 150)};
 
 // {  unassignVehicle _x; _x action["GetOut", vehicle _x]; } forEach (units SupportGroup1);
 // sleep 2;

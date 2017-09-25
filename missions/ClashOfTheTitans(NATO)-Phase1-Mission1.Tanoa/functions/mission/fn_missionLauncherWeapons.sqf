@@ -1,53 +1,53 @@
-params[["_weaponCategories", ["AT-NT"]]];
+params[["_weaponCategories", ["ROCKET"]]];
 
 _weps = [];
 
 // AT (No Tracking)
-_atnt = ["AT-NT", []];
-_atnts = [];
-_atnts pushBack "rhs_weap_M136";
-_atnts pushBack "rhs_weap_m72a7";
-_atnts pushBack "rhs_weap_smaw";
-_atnts pushBack "vme_pla_PF89B";
-_atnts pushBack "vme_pla_PF98";
-_atnts pushBack "rhs_weap_rpg7";
-_atnt set [1, _atnts];
-_weps pushBack _atnt;
+_rocket = ["ROCKET", []];
+_rockets = [];
+_rockets pushBack "rhs_weap_M136";
+_rockets pushBack "rhs_weap_m72a7";
+_rockets pushBack "rhs_weap_smaw";
+_rockets pushBack "vme_pla_PF89B";
+_rockets pushBack "vme_pla_PF98";
+_rockets pushBack "rhs_weap_rpg7";
+_rocket set [1, _rockets];
+_weps pushBack _rocket;
 
 // AT (Tracking)
-_att = ["AT-T", []];
-_atts = [];
-_atts pushBack "rhs_weap_fgm148";
-_atts pushBack "launch_B_Titan_short_tna_F";
-_att set [1, _atts];
-_weps pushBack _att;
+_missile = ["MISSILE", []];
+_missiles = [];
+_missiles pushBack "rhs_weap_fgm148";
+_missiles pushBack "launch_B_Titan_short_tna_F";
+_missile set [1, _missiles];
+_weps pushBack _missile;
 
 // AP
-_ap = ["AP", []];
-_aps = [];
-_aps pushBack "rhs_weap_M136_hedp";
-_aps pushBack "vme_pla_PF89A";
-_aps pushBack "vme_pla_WPF89_2";
-_aps pushBack "rhs_weap_rshg2";
-_ap set [1, _aps];
-_weps pushBack _ap;
+_apRocket = ["AP-ROCKET", []];
+_apRockets = [];
+_apRockets pushBack "rhs_weap_M136_hedp";
+_apRockets pushBack "vme_pla_PF89A";
+_apRockets pushBack "vme_pla_WPF89_2";
+_apRockets pushBack "rhs_weap_rshg2";
+_apRocket set [1, _apRockets];
+_weps pushBack _apRocket;
 
 // AA
-_aa = ["AA", []];
-_aas = [];
-_aas pushBack "rhs_weap_igla";
-_aas pushBack "rhs_weap_fim92";
-_aa set [1, _aas];
-_weps pushBack _aa;
+_aaMissile = ["AA-MISSILE", []];
+_aaMissiles = [];
+_aaMissiles pushBack "rhs_weap_igla";
+_aaMissiles pushBack "rhs_weap_fim92";
+_aaMissile set [1, _aaMissiles];
+_weps pushBack _aaMissile;
 
 
-// Anti-building
-_ab = ["AB", []];
-_abs = [];
-_abs pushBack "rhs_weap_M136_hp";
-_abs pushBack "vme_pla_PF89A_AST";
-_ab set [1, _abs];
-_weps pushBack _ab;
+// Anti-Structure
+_asRocket = ["AB-ROCKET", []];
+_asRockets = [];
+_asRockets pushBack "rhs_weap_M136_hp";
+_asRockets pushBack "vme_pla_PF89A_AST";
+_asRocket set [1, _asRockets];
+_weps pushBack _asRocket;
 
 // Filter out Request Weapon Set
 _finalWeps = [];
