@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=31;
+		nextID=37;
 	};
 	class Camera
 	{
-		pos[]={13497.39,32.054138,2942.585};
-		dir[]={0.50474238,-0.62136847,0.59930038};
-		up[]={0.40028161,0.78351378,0.47526941};
-		aside[]={0.76487875,-7.5664138e-007,-0.64419496};
+		pos[]={13521.285,11.044497,2977.7288};
+		dir[]={-0.24123384,-0.90947986,0.33861977};
+		up[]={-0.52770549,0.41573113,0.74074006};
+		aside[]={0.81446111,-2.3654138e-008,0.58022529};
 	};
 };
 binarizationWanted=0;
@@ -332,8 +332,8 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="SharedObjectives";
-			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			property="ReviveRequiredItems";
+			expression="false";
 			class Value
 			{
 				class data
@@ -467,8 +467,8 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="ReviveRequiredItems";
-			expression="false";
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
 			class Value
 			{
 				class data
@@ -8935,12 +8935,11 @@ class Mission
 		class Item146
 		{
 			dataType="Marker";
-			position[]={13525.907,-0.62500024,2976.1484};
+			position[]={13520.052,3.9954255,2979.4441};
 			name="BeginMarker";
 			type="respawn_unknown";
-			angle=235.60545;
+			angle=306.0961;
 			id=1153;
-			atlOffset=-4.3342237;
 		};
 		class Item147
 		{
@@ -13284,7 +13283,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="SupportGroup2";
+				name="SupportGroup3";
 			};
 			class CrewLinks
 			{
@@ -13626,7 +13625,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="SupportGroup3";
+				name="SupportGroup1";
 			};
 			class CrewLinks
 			{
@@ -13890,6 +13889,7 @@ class Mission
 			};
 			class Attributes
 			{
+				name="SupportGroup2";
 			};
 			class CrewLinks
 			{
@@ -14830,6 +14830,7 @@ class Mission
 			};
 			class Attributes
 			{
+				name="PlayerGroup";
 			};
 			id=1580;
 		};

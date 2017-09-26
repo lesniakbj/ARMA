@@ -2,13 +2,22 @@
 ["AmmoboxInit", [Arsenal1, false]] spawn BIS_fnc_arsenal;
 ["AmmoboxInit", [Arsenal2, false]] spawn BIS_fnc_arsenal;
 
-// Get our Weapon Sets
+// Get our Weapons Sets
 _mizPrimayWeapons = [] call DK_fnc_missionPrimaryWeapons;
 _mizSecondayWeapons = [["PISTOL", "SPECIAL"]] call DK_fnc_missionSecondaryWeapons;
-_mizLaunchers = [["AT-NT", "AP"]] call DK_fnc_missionLauncherWeapons;
+_mizLaunchers = [["ROCKET", "AP-ROCKET"]] call DK_fnc_missionLauncherWeapons;
 _weapons = _mizPrimayWeapons + _mizSecondayWeapons + _mizLaunchers;
 [Arsenal1, _weapons, true] call BIS_fnc_addVirtualWeaponCargo;
 [Arsenal2, _weapons, true] call BIS_fnc_addVirtualWeaponCargo;
+
+// Get our Weapon Attachments
+_sightAttachments = [] call DK_fnc_missionWeaponSights;
+_railAttachments = [] call DK_fnc_missionWeaponRailAttachments;
+_muzzleAttachments = []; //call DK_fnc_missionWeaponMuzzleAttachments;
+_bipodAttachments = []; //call DK_fnc_missionWeaponBipods;
+_attachments = _sightAttachments + _railAttachments + _muzzleAttachments + _bipodAttachments;
+[Arsenal1, _attachments, true] call BIS_fnc_addVirtualItemCargo;
+[Arsenal2, _attachments, true] call BIS_fnc_addVirtualItemCargo;
 
 // Get our Item Sets
 

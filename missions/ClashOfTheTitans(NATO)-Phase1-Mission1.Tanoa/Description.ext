@@ -8,6 +8,10 @@ class CfgFunctions {
 			class missionPrimaryWeapons {};
 			class missionSecondaryWeapons {};
 			class missionLauncherWeapons {};
+			class missionWeaponSights {};
+			class missionWeaponRailAttachments {};
+			class missionWeaponMuzzleAttachments {};
+			class missionWeaponBipods {};
 		};
 
 		class random {
