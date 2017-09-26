@@ -1,19 +1,16 @@
-// Get our Weapons Sets
-_mizPrimayWeapons = [] call DK_fnc_missionPrimaryWeapons;
-_mizSecondayWeapons = [["PISTOL", "SPECIAL"]] call DK_fnc_missionSecondaryWeapons;
-_mizLaunchers = [["ROCKET", "AP-ROCKET"]] call DK_fnc_missionLauncherWeapons;
-_weapons = _mizPrimayWeapons + _mizSecondayWeapons + _mizLaunchers;
+// Load our weapon functions
+_wepHandle = [] execVM "functions\mission\arsenal\fn_missionWeapons.sqf";
+waitUntil {scriptDone _wepHandle};
+_attachmentHandle = [] execVM "functions\mission\arsenal\fn_missionAttachments.sqf"; 
+waitUntil {scriptDone _attachmentHandle};
 
-// Get our Ammo Set
+// Get our Weapons and Ammo Sets
 _ammo = [];
+_weapons = [[], ["PISTOL", "SPECIAL"], ["ROCKET", "AP-ROCKET"]] call DK_fnc_loadMissionWeapons;
 { _wepAmmo = getArray (configfile >> "CfgWeapons" >> _x >> "magazines"); _ammo = _ammo + _wepAmmo; } forEach _weapons;
 
 // Get our Weapon Attachments
-_sightAttachments = [] call DK_fnc_missionWeaponSights;
-_railAttachments = [] call DK_fnc_missionWeaponRailAttachments;
-_muzzleAttachments = [["SILENCER"]] call DK_fnc_missionWeaponMuzzleAttachments;
-_bipodAttachments = []; //call DK_fnc_missionWeaponBipods;
-_attachments = _sightAttachments + _railAttachments + _muzzleAttachments + _bipodAttachments;
+_attachments = [[], [], ["SILENCER"], []] call DK_fnc_loadWeaponAttachments;
 
 // Init and Add it all
 ["AmmoboxInit", [Arsenal1, false]] spawn BIS_fnc_arsenal;
