@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=37;
+		nextID=39;
 	};
 	class Camera
 	{
-		pos[]={13521.285,11.044497,2977.7288};
-		dir[]={-0.24123384,-0.90947986,0.33861977};
-		up[]={-0.52770549,0.41573113,0.74074006};
-		aside[]={0.81446111,-2.3654138e-008,0.58022529};
+		pos[]={13529.667,5.4214249,2980.8621};
+		dir[]={-0.99546653,-0.086419359,-0.040222537};
+		up[]={-0.086389087,0.9962557,-0.0034902638};
+		aside[]={-0.04037001,-6.5005952e-007,0.99920207};
 	};
 };
 binarizationWanted=0;
@@ -332,8 +332,8 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="ReviveRequiredItems";
-			expression="false";
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
 			class Value
 			{
 				class data
@@ -467,8 +467,8 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="SharedObjectives";
-			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			property="ReviveRequiredItems";
+			expression="false";
 			class Value
 			{
 				class data
@@ -496,16 +496,16 @@ class Mission
 		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.49999961;
-		forecastFog=0.30006665;
+		forecastWeather=0;
+		forecastFog=0.054315139;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=1998;
 		month=1;
 		day=23;
-		hour=5;
-		minute=-13;
+		hour=6;
+		minute=-9;
 		startFogBase=250;
 		forecastFogBase=250;
 		startFogDecay=0.014;
