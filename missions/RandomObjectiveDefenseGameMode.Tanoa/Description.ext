@@ -1,0 +1,25 @@
+class CfgFunctions {
+	class DK {
+		class mission {
+			file = "functions\mission";
+			class drawRoundTime {};
+			class clientCheckRoundState {};
+		};
+
+		class civilian {
+			file = "functions\civilian";
+			class civilianPopulationZone {};
+		};
+
+		class random {
+			file = "functions\random";
+			class randomBetween {};
+			class randomUnitInGroup {};
+			class randomPositionInTriggerArea {};
+		};
+	};
+};
+
+class CfgRoles {};
+
+class CfgRespawnInventory {};

@@ -6,7 +6,7 @@ waitUntil {scriptDone _attachmentHandle};
 
 // Get our Weapons and Ammo Sets
 _ammo = [];
-_weapons = [[], ["PISTOL", "SPECIAL"], ["ROCKET", "AP-ROCKET"]] call DK_fnc_loadMissionWeapons;
+_weapons = [["M16", "SMG"], ["PISTOL", "SPECIAL"], ["ROCKET", "AP-ROCKET"]] call DK_fnc_loadMissionWeapons;
 { _wepAmmo = getArray (configfile >> "CfgWeapons" >> _x >> "magazines"); _ammo = _ammo + _wepAmmo; } forEach _weapons;
 
 // Get our Weapon Attachments
